@@ -1,0 +1,2159 @@
+[
+  {
+    "query_id": "q19",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Hệ thống ưu tiên phát hiện **bot độc hại (Bad Bot)**, dù vẫn phân loại được bot hợp lệ và bot độc hại. [B:doan-bot-traffic-2026:p23:1304-2006]",
+    "citations": [
+      "B:doan-bot-traffic-2026:p23:1304-2006"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại mục tiêu phân loại nhận diện bot độc hại bot hợp lệ",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p79:534-1329",
+            "text": "Bảng 3.23.So sánh định tính hệ thống đề tài với nhóm giải pháp phổ biến\nTiêu chí Hệ thống đềtài GoogleAnalytics Cloudflare/Imperva Rule-basedthủ công\nMục tiêu\nchính\nPhân tích\ntraffic và\nphát hiện bot\nbằng ML\nPhân tích\nmarketing\nBảo vệ website chuyên\nsâu\nChặn theo\nluật đơn giản\nKhả năng tùy\nchỉnh feature\nCao Thấp Trung bình\nđến cao\nTrung bình\nChi phí triển\nkhai\nThấp trong\nphạm vi\ndemo\nThấp đến\ntrung bình\nCao hơn, tùy\ngói dịch vụ\nThấp\nGiải thích kết\nquả theo session\nCó thể bổ\nsung feature\nimportance\nHạn chế Có nhưng\nphụ thuộc\nnền tảng\nDễ hiểu\nnhưng thiếu\nlinh hoạt\nPhù hợp\nnghiên\ncứu/học tập\nRất phù hợp Chỉ phù hợp\nphân tích số\nliệu\nKhó can\nthiệp sâu\nPhù hợp mức\ncơ bản\nKhả năng\nphát hiện bot\nmới\nCó thể cải\nthiện bằng\nretraining\nKhông phải\ntrọng tâm\nMạnh Yếu nếu\nkhông cập\nnhật luật\nQua so",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 79,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.23",
+              "section_title": "Đánh giá so sánh về chi phí triển khai và khả năng tùy chỉnh",
+              "char_start": 534,
+              "char_end": 1329,
+              "tokens": 204,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.871607,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p11:1655-2291",
+            "text": "Đề tài không chỉ mang ý nghĩa thực tiễn trong lĩnh vực Digital Marketing mà còn giúp\ntiếp cận và ứng dụng các công nghệ hiện đại như Microservice Architecture, Machine\nLearning và phân tích dữ liệu trong phát triển hệ thống phần mềm.\n2. Mục tiêu đề tài\n2.1 Mục tiêu tổng quát\nMục tiêu tổng quát của đề tài là nghiên cứu, thiết kế và phát triển thành công một\nhệ thống phân tích và phát hiện traffic bất thường trong Digital Marketing ứng dụng\nMachine Learning. Hệ thống cho phép thu thập và quản lý dữ liệu truy cập từ website,\nphân tích hành vi người dùng và phát hiện bot traffic hoặc các truy cập bất thường dựa\ntrên dữ liệu thực tế.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "MỞ ĐẦU",
+              "section_title": "MỞ ĐẦU",
+              "char_start": 1655,
+              "char_end": 2291,
+              "tokens": 141,
+              "strategy": "B",
+              "chapter_title": "MỞ ĐẦU"
+            },
+            "score": 0.871531,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p23:1304-2006",
+            "text": "1.5. Tổng quan về Machine Learning và phát hiện traffic bất thường\n1.5.1. Khái niệm và phân loại Bot Traffic\nHệ thống phát hiện bot traffic là một hệ thống phần mềm có khả năng phân tích\nhành vi truy cập của người dùng nhằm nhận diện và phân loại lưu lượng truy cập bất\nthường hoặc tự động (bot traffic). Theo nhiều nghiên cứu trong lĩnh vực Cybersecurity\nvà Web Analytics, bot traffic có thể được phân loại theo nhiều tiêu chí khác nhau:\n- Theo mục đích hoạt động: Good Bot (bot hợp lệ như Googlebot, Bingbot phục vụ\nlập chỉ mục tìm kiếm) và Bad Bot (bot độc hại dùng để spam, click ảo quảng cáo,\ncrawling trái phép hoặc tấn công hệ thống). Đề tài tập trung chủ yếu vào việc phát\nhiện bad bot traffic.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 23,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.5",
+              "section_title": "Tổng quan về Machine Learning và phát hiện traffic bất thường",
+              "char_start": 1304,
+              "char_end": 2006,
+              "tokens": 164,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.871039,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p79:534-1329 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 79]\nBảng 3.23.So sánh định tính hệ thống đề tài với nhóm giải pháp phổ biến\nTiêu chí Hệ thống đềtài GoogleAnalytics Cloudflare/Imperva Rule-basedthủ công\nMục tiêu\nchính\nPhân tích\ntraffic và\nphát hiện bot\nbằng ML\nPhân tích\nmarketing\nBảo vệ website chuyên\nsâu\nChặn theo\nluật đơn giản\nKhả năng tùy\nchỉnh feature\nCao Thấp Trung bình\nđến cao\nTrung bình\nChi phí triển\nkhai\nThấp trong\nphạm vi\ndemo\nThấp đến\ntrung bình\nCao hơn, tùy\ngói dịch vụ\nThấp\nGiải thích kết\nquả theo session\nCó thể bổ\nsung feature\nimportance\nHạn chế Có nhưng\nphụ thuộc\nnền tảng\nDễ hiểu\nnhưng thiếu\nlinh hoạt\nPhù hợp\nnghiên\ncứu/học tập\nRất phù hợp Chỉ phù hợp\nphân tích số\nliệu\nKhó can\nthiệp sâu\nPhù hợp mức\ncơ bản\nKhả năng\nphát hiện bot\nmới\nCó thể cải\nthiện bằng\nretraining\nKhông phải\ntrọng tâm\nMạnh Yếu nếu\nkhông cập\nnhật luật\nQua so\n\n[B:doan-bot-traffic-2026:p11:1655-2291 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 11]\nĐề tài không chỉ mang ý nghĩa thực tiễn trong lĩnh vực Digital Marketing mà còn giúp\ntiếp cận và ứng dụng các công nghệ hiện đại như Microservice Architecture, Machine\nLearning và phân tích dữ liệu trong phát triển hệ thống phần mềm.\n2. Mục tiêu đề tài\n2.1 Mục tiêu tổng quát\nMục tiêu tổng quát của đề tài là nghiên cứu, thiết kế và phát triển thành công một\nhệ thống phân tích và phát hiện traffic bất thường trong Digital Marketing ứng dụng\nMachine Learning. Hệ thống cho phép thu thập và quản lý dữ liệu truy cập từ website,\nphân tích hành vi người dùng và phát hiện bot traffic hoặc các truy cập bất thường dựa\ntrên dữ liệu thực tế.\n\n[B:doan-bot-traffic-2026:p23:1304-2006 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\n1.5. Tổng quan về Machine Learning và phát hiện traffic bất thường\n1.5.1. Khái niệm và phân loại Bot Traffic\nHệ thống phát hiện bot traffic là một hệ thống phần mềm có khả năng phân tích\nhành vi truy cập của người dùng nhằm nhận diện và phân loại lưu lượng truy cập bất\nthường hoặc tự động (bot traffic). Theo nhiều nghiên cứu trong lĩnh vực Cybersecurity\nvà Web Analytics, bot traffic có thể được phân loại theo nhiều tiêu chí khác nhau:\n- Theo mục đích hoạt động: Good Bot (bot hợp lệ như Googlebot, Bingbot phục vụ\nlập chỉ mục tìm kiếm) và Bad Bot (bot độc hại dùng để spam, click ảo quảng cáo,\ncrawling trái phép hoặc tấn công hệ thống). Đề tài tập trung chủ yếu vào việc phát\nhiện bad bot traffic.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p79:534-1329",
+          "B:doan-bot-traffic-2026:p11:1655-2291",
+          "B:doan-bot-traffic-2026:p23:1304-2006"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_016M6PYR6oMX7BKfb8CN116RAC",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 4988.4,
+        "input_chars": 1398,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 40,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 40,
+              "output_tokens": 47,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 47,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00094,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại mục tiêu phân loại nhận diện bot độc hại bot hợp lệ"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01NvgC9kAkCpu35dYdKHGUoLn4",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 4674.8,
+        "input_chars": 3931,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 831,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 831,
+              "output_tokens": 78,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 78,
+          "output_tokens_details": {
+            "thinking_tokens": 20
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00156,
+        "text": "Hệ thống ưu tiên phát hiện **bot độc hại (Bad Bot)**, dù vẫn phân loại được bot hợp lệ và bot độc hại. [B:doan-bot-traffic-2026:p23:1304-2006]",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại mục tiêu phân loại nhận diện bot độc hại bot hợp lệ",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 46.6
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p79:534-1329",
+      "B:doan-bot-traffic-2026:p11:1655-2291",
+      "B:doan-bot-traffic-2026:p23:1304-2006"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p79:534-1329 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 79]\nBảng 3.23.So sánh định tính hệ thống đề tài với nhóm giải pháp phổ biến\nTiêu chí Hệ thống đềtài GoogleAnalytics Cloudflare/Imperva Rule-basedthủ công\nMục tiêu\nchính\nPhân tích\ntraffic và\nphát hiện bot\nbằng ML\nPhân tích\nmarketing\nBảo vệ website chuyên\nsâu\nChặn theo\nluật đơn giản\nKhả năng tùy\nchỉnh feature\nCao Thấp Trung bình\nđến cao\nTrung bình\nChi phí triển\nkhai\nThấp trong\nphạm vi\ndemo\nThấp đến\ntrung bình\nCao hơn, tùy\ngói dịch vụ\nThấp\nGiải thích kết\nquả theo session\nCó thể bổ\nsung feature\nimportance\nHạn chế Có nhưng\nphụ thuộc\nnền tảng\nDễ hiểu\nnhưng thiếu\nlinh hoạt\nPhù hợp\nnghiên\ncứu/học tập\nRất phù hợp Chỉ phù hợp\nphân tích số\nliệu\nKhó can\nthiệp sâu\nPhù hợp mức\ncơ bản\nKhả năng\nphát hiện bot\nmới\nCó thể cải\nthiện bằng\nretraining\nKhông phải\ntrọng tâm\nMạnh Yếu nếu\nkhông cập\nnhật luật\nQua so\n\n[B:doan-bot-traffic-2026:p11:1655-2291 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 11]\nĐề tài không chỉ mang ý nghĩa thực tiễn trong lĩnh vực Digital Marketing mà còn giúp\ntiếp cận và ứng dụng các công nghệ hiện đại như Microservice Architecture, Machine\nLearning và phân tích dữ liệu trong phát triển hệ thống phần mềm.\n2. Mục tiêu đề tài\n2.1 Mục tiêu tổng quát\nMục tiêu tổng quát của đề tài là nghiên cứu, thiết kế và phát triển thành công một\nhệ thống phân tích và phát hiện traffic bất thường trong Digital Marketing ứng dụng\nMachine Learning. Hệ thống cho phép thu thập và quản lý dữ liệu truy cập từ website,\nphân tích hành vi người dùng và phát hiện bot traffic hoặc các truy cập bất thường dựa\ntrên dữ liệu thực tế.\n\n[B:doan-bot-traffic-2026:p23:1304-2006 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\n1.5. Tổng quan về Machine Learning và phát hiện traffic bất thường\n1.5.1. Khái niệm và phân loại Bot Traffic\nHệ thống phát hiện bot traffic là một hệ thống phần mềm có khả năng phân tích\nhành vi truy cập của người dùng nhằm nhận diện và phân loại lưu lượng truy cập bất\nthường hoặc tự động (bot traffic). Theo nhiều nghiên cứu trong lĩnh vực Cybersecurity\nvà Web Analytics, bot traffic có thể được phân loại theo nhiều tiêu chí khác nhau:\n- Theo mục đích hoạt động: Good Bot (bot hợp lệ như Googlebot, Bingbot phục vụ\nlập chỉ mục tìm kiếm) và Bad Bot (bot độc hại dùng để spam, click ảo quảng cáo,\ncrawling trái phép hoặc tấn công hệ thống). Đề tài tập trung chủ yếu vào việc phát\nhiện bad bot traffic.",
+    "latency_ms": 9710.1,
+    "input_chars": 5329,
+    "output_tokens": 125,
+    "output_cost_usd_est": 0.0025,
+    "error": null
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Khi người dùng thật bị nghi là bot vì có hành vi bất thường nhưng hợp lệ, hệ thống nên xử lý thế nào?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Hệ thống không nên tự động chặn ngay. Thay vào đó, cần đưa người dùng vào danh sách nghi ngờ để quản trị viên kiểm tra thêm, đồng thời hiển thị mức độ tin cậy và các đặc trưng hành vi nổi bật để giảm nguy cơ xử lý nhầm [B:doan-bot-traffic-2026:p64:0-662].",
+    "citations": [
+      "B:doan-bot-traffic-2026:p64:0-662"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "người dùng thật bị nghi là bot hành vi bất thường nhưng hợp lệ hệ thống xử lý thế nào xác minh bổ sung false positive",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p64:0-662",
+            "text": "là bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến\ndoanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người\ndùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.\nCác false positive thường xuất hiện khi người dùng thật có hành vi bất thường\nnhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập\nqua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên tự động chặn\nngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị\nconfidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 64,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.5",
+              "section_title": "Phân tích chi tiết kết quả và các trường hợp sai",
+              "char_start": 0,
+              "char_end": 662,
+              "tokens": 156,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.866955,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p64:663-1110",
+            "text": "Các false negative thường liên quan đến bot tinh vi có tốc độ request thấp, user-agent giống trình duyệt thật và thời gian tương tác được làm ngẫu nhiên. Để giảm loại lỗi\nnày, hệ thống cần bổ sung thêm feature hành vi như chuỗi điều hướng, tương tác chuột,\nscroll depth, fingerprint thiết bị hoặc lịch sử IP . Đây cũng là lý do các nền tảng thương\nmại lớn thường kết hợp nhiều lớp phát hiện thay vì chỉ dựa vào một mô hình đơn lẻ [13],\n[14], [17].",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 64,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.5",
+              "section_title": "Phân tích chi tiết kết quả và các trường hợp sai",
+              "char_start": 663,
+              "char_end": 1110,
+              "tokens": 114,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.866707,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p15:1861-2077",
+            "text": "Điều này dẫn đến tình trạng false\npositive và false negative, tức hệ thống có thể nhầm lẫn giữa người dùng thật và bot\ntraffic. [13]\nTrong lĩnh vực quảng cáo trực tuyến, bot traffic gây thiệt hại kinh tế rất lớn. Báo",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 15,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.1.2",
+              "section_title": "Hạn chế của các phương pháp phát hiện traffic truyền thống và động lực ứng",
+              "char_start": 1861,
+              "char_end": 2077,
+              "tokens": 52,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.863038,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p64:0-662 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 64]\nlà bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến\ndoanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người\ndùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.\nCác false positive thường xuất hiện khi người dùng thật có hành vi bất thường\nnhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập\nqua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên tự động chặn\nngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị\nconfidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.\n\n[B:doan-bot-traffic-2026:p64:663-1110 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 64]\nCác false negative thường liên quan đến bot tinh vi có tốc độ request thấp, user-agent giống trình duyệt thật và thời gian tương tác được làm ngẫu nhiên. Để giảm loại lỗi\nnày, hệ thống cần bổ sung thêm feature hành vi như chuỗi điều hướng, tương tác chuột,\nscroll depth, fingerprint thiết bị hoặc lịch sử IP . Đây cũng là lý do các nền tảng thương\nmại lớn thường kết hợp nhiều lớp phát hiện thay vì chỉ dựa vào một mô hình đơn lẻ [13],\n[14], [17].\n\n[B:doan-bot-traffic-2026:p15:1861-2077 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 15]\nĐiều này dẫn đến tình trạng false\npositive và false negative, tức hệ thống có thể nhầm lẫn giữa người dùng thật và bot\ntraffic. [13]\nTrong lĩnh vực quảng cáo trực tuyến, bot traffic gây thiệt hại kinh tế rất lớn. Báo",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p64:0-662",
+          "B:doan-bot-traffic-2026:p64:663-1110",
+          "B:doan-bot-traffic-2026:p15:1861-2077"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01WbcBBFXDGHLRX82qMVBZErBg",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 6388.8,
+        "input_chars": 1434,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 47,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 47,
+              "output_tokens": 43,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 43,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00086,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "người dùng thật bị nghi là bot hành vi bất thường nhưng hợp lệ hệ thống xử lý thế nào xác minh bổ sung false positive"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01XRK5WVQnmnXnzGruXuyaoy3Z",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 5079.9,
+        "input_chars": 3156,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 531,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 531,
+              "output_tokens": 121,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 121,
+          "output_tokens_details": {
+            "thinking_tokens": 35
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00242,
+        "text": "Hệ thống không nên tự động chặn ngay. Thay vào đó, cần đưa người dùng vào danh sách nghi ngờ để quản trị viên kiểm tra thêm, đồng thời hiển thị mức độ tin cậy và các đặc trưng hành vi nổi bật để giảm nguy cơ xử lý nhầm [B:doan-bot-traffic-2026:p64:0-662].",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "người dùng thật bị nghi là bot hành vi bất thường nhưng hợp lệ hệ thống xử lý thế nào xác minh bổ sung false positive",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 61.9
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p64:0-662",
+      "B:doan-bot-traffic-2026:p64:663-1110",
+      "B:doan-bot-traffic-2026:p15:1861-2077"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p64:0-662 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 64]\nlà bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến\ndoanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người\ndùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.\nCác false positive thường xuất hiện khi người dùng thật có hành vi bất thường\nnhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập\nqua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên tự động chặn\nngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị\nconfidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.\n\n[B:doan-bot-traffic-2026:p64:663-1110 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 64]\nCác false negative thường liên quan đến bot tinh vi có tốc độ request thấp, user-agent giống trình duyệt thật và thời gian tương tác được làm ngẫu nhiên. Để giảm loại lỗi\nnày, hệ thống cần bổ sung thêm feature hành vi như chuỗi điều hướng, tương tác chuột,\nscroll depth, fingerprint thiết bị hoặc lịch sử IP . Đây cũng là lý do các nền tảng thương\nmại lớn thường kết hợp nhiều lớp phát hiện thay vì chỉ dựa vào một mô hình đơn lẻ [13],\n[14], [17].\n\n[B:doan-bot-traffic-2026:p15:1861-2077 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 15]\nĐiều này dẫn đến tình trạng false\npositive và false negative, tức hệ thống có thể nhầm lẫn giữa người dùng thật và bot\ntraffic. [13]\nTrong lĩnh vực quảng cáo trực tuyến, bot traffic gây thiệt hại kinh tế rất lớn. Báo",
+    "latency_ms": 11530.8,
+    "input_chars": 4590,
+    "output_tokens": 164,
+    "output_cost_usd_est": 0.00328,
+    "error": null
+  },
+  {
+    "query_id": "q21",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Trong chương 3, mô hình Random Forest đạt Accuracy bao nhiêu trên tập kiểm thử?",
+    "filter": {
+      "chapter": 3
+    },
+    "status": "answered",
+    "answer": "Mô hình Random Forest đạt Accuracy **93,85%** trên tập kiểm thử. [B:doan-bot-traffic-2026:p75:1103-1885]",
+    "citations": [
+      "B:doan-bot-traffic-2026:p75:1103-1885"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Chương 3 mô hình Random Forest Accuracy trên tập kiểm thử đạt bao nhiêu phần trăm",
+        "filter": {
+          "chapter": 3
+        },
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p75:1103-1885",
+            "text": "Bảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 75,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.19",
+              "section_title": "Đánh giá định lượng mô hình và ma trận nhầm lẫn",
+              "char_start": 1103,
+              "char_end": 1885,
+              "tokens": 212,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.893656,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p76:0-642",
+            "text": "Precision (Bot) 88,94% Mức độ tin cậy của các cảnh\nbáo bot\nRecall (Bot) 91,90% Khả năng phát hiện bot thật\ntrong dữ liệu\nF1-score (Bot) 90,40% Cân bằng giữa Precision và\nRecall của lớp bot\nFalse Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh\nbáo nhầm\nFalse Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện\nKết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.\nTuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển\nkhai thực tế, mô hình cần được đánh giá lại định kỳ bằng dữ liệu traffic thật, đặc biệt\ntrong các giai đoạn chạy quảng cáo khi hành vi truy cập có thể biến động mạnh.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 76,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.19",
+              "section_title": "Đánh giá định lượng mô hình và ma trận nhầm lẫn",
+              "char_start": 0,
+              "char_end": 642,
+              "tokens": 175,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.874008,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p75:0-678",
+            "text": "Tập huấn luyện 8.000 session 80% Dùng để huấn luyện\nRandom Forest và điều\nchỉnh pipeline feature\nTập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall\nvà F1-score\nTừ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu\ncủa cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi\ntrường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ\nmẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn\nnhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,\noversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 75,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.18",
+              "section_title": "Bổ sung số liệu thực nghiệm và phân bố dataset",
+              "char_start": 0,
+              "char_end": 678,
+              "tokens": 171,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.872629,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p75:1103-1885 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nBảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử\n\n[B:doan-bot-traffic-2026:p76:0-642 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 76]\nPrecision (Bot) 88,94% Mức độ tin cậy của các cảnh\nbáo bot\nRecall (Bot) 91,90% Khả năng phát hiện bot thật\ntrong dữ liệu\nF1-score (Bot) 90,40% Cân bằng giữa Precision và\nRecall của lớp bot\nFalse Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh\nbáo nhầm\nFalse Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện\nKết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.\nTuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển\nkhai thực tế, mô hình cần được đánh giá lại định kỳ bằng dữ liệu traffic thật, đặc biệt\ntrong các giai đoạn chạy quảng cáo khi hành vi truy cập có thể biến động mạnh.\n\n[B:doan-bot-traffic-2026:p75:0-678 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nTập huấn luyện 8.000 session 80% Dùng để huấn luyện\nRandom Forest và điều\nchỉnh pipeline feature\nTập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall\nvà F1-score\nTừ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu\ncủa cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi\ntrường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ\nmẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn\nnhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,\noversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p75:1103-1885",
+          "B:doan-bot-traffic-2026:p76:0-642",
+          "B:doan-bot-traffic-2026:p75:0-678"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01yjy1YGJ3i26ghFJtmTWhrAyT",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 4700.5,
+        "input_chars": 1412,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 40,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 40,
+              "output_tokens": 36,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 36,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00072,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Chương 3 mô hình Random Forest Accuracy trên tập kiểm thử đạt bao nhiêu phần trăm"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01ad3c8LfuwZDpdGMXjrgb7DjK",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 4015.7,
+        "input_chars": 3872,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 818,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 818,
+              "output_tokens": 43,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 43,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00086,
+        "text": "Mô hình Random Forest đạt Accuracy **93,85%** trên tập kiểm thử. [B:doan-bot-traffic-2026:p75:1103-1885]",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "Chương 3 mô hình Random Forest Accuracy trên tập kiểm thử đạt bao nhiêu phần trăm",
+        "applied_filter": {
+          "chapter": 3
+        },
+        "n": 3,
+        "latency_ms": 47.5
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p75:1103-1885",
+      "B:doan-bot-traffic-2026:p76:0-642",
+      "B:doan-bot-traffic-2026:p75:0-678"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p75:1103-1885 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nBảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử\n\n[B:doan-bot-traffic-2026:p76:0-642 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 76]\nPrecision (Bot) 88,94% Mức độ tin cậy của các cảnh\nbáo bot\nRecall (Bot) 91,90% Khả năng phát hiện bot thật\ntrong dữ liệu\nF1-score (Bot) 90,40% Cân bằng giữa Precision và\nRecall của lớp bot\nFalse Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh\nbáo nhầm\nFalse Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện\nKết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.\nTuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển\nkhai thực tế, mô hình cần được đánh giá lại định kỳ bằng dữ liệu traffic thật, đặc biệt\ntrong các giai đoạn chạy quảng cáo khi hành vi truy cập có thể biến động mạnh.\n\n[B:doan-bot-traffic-2026:p75:0-678 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nTập huấn luyện 8.000 session 80% Dùng để huấn luyện\nRandom Forest và điều\nchỉnh pipeline feature\nTập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall\nvà F1-score\nTừ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu\ncủa cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi\ntrường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ\nmẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn\nnhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,\noversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",
+    "latency_ms": 8763.8,
+    "input_chars": 5284,
+    "output_tokens": 79,
+    "output_cost_usd_est": 0.00158,
+    "error": null
+  },
+  {
+    "query_id": "q22",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Trong chương 2, yêu cầu phi chức năng về hiệu năng quy định thời gian phản hồi API tối đa là bao lâu?",
+    "filter": {
+      "chapter": 2
+    },
+    "status": "answered",
+    "answer": "Thời gian phản hồi API tối đa là **2 giây** đối với các request thông thường. [B:doan-bot-traffic-2026:p38:0-535]",
+    "citations": [
+      "B:doan-bot-traffic-2026:p38:0-535"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Chương 2 yêu cầu phi chức năng hiệu năng thời gian phản hồi API tối đa bao lâu",
+        "filter": {
+          "chapter": 2
+        },
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p38:0-535",
+            "text": "- Thống kê hiệu suất mô hình Machine Learning.\n2.2.2. Yêu cầu phi chức năng\nBên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu\ncầu phi chức năng sau:\nHiệu năng\nHệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ\nthấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập\nnhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ\nthống cần xử lý được nhiều request đồng thời mà không ảnh hưởng đáng kể đến hiệu\nnăng website.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 38,
+            "metadata": {
+              "chapter": 2,
+              "section": "2.2.1",
+              "section_title": "Yêu cầu chức năng",
+              "char_start": 0,
+              "char_end": 535,
+              "tokens": 128,
+              "strategy": "B",
+              "chapter_title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG"
+            },
+            "score": 0.861356,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p53:0-328",
+            "text": "và session id.\nAPI Service chịu trách nhiệm kiểm tra API key, loại bỏ dữ liệu thiếu trường bắt\nbuộc, sau đó ghi dữ liệu vào bảng request log và cập nhật thông tin session tương ứng.\nĐối với dữ liệu phát sinh liên tục, hệ thống ưu tiên ghi nhanh vào database, sau đó\nxử lý feature ở bước sau nhằm giảm độ trễ khi website gửi log.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 53,
+            "metadata": {
+              "chapter": 2,
+              "section": "2.4.2",
+              "section_title": "Luồng thu thập và lưu trữ traffic",
+              "char_start": 0,
+              "char_end": 328,
+              "tokens": 81,
+              "strategy": "B",
+              "chapter_title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG"
+            },
+            "score": 0.828163,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p56:0-797",
+            "text": "Bảng 2.14.Tập đặc trưng sử dụng cho mô hình\nFeature Công thức/nguồn tính Ý nghĩa trong phát hiện bot\nrequests_per_minute Số request / thời lượng\nphiên theo phút\nPhát hiện truy cập tự động tần\nsuất cao\nsession_duration Thời điểm cuối - thời điểm\nđầu trong session\nPhân biệt phiên tự nhiên và\nphiên quá ngắn\npage_views Tổng số trang/request trong\nsession\nĐánh giá mức độ hoạt động\nunique_pages Số URL khác nhau trong\nsession\nNhận diện bot lặp lại một số\nendpoint\naverage_interval Trung bình thời gian giữa\nhai request\nPhát hiện nhịp request đều bất\nthường\nerror_rate Tỷ lệ request lỗi 4xx/5xx Phát hiện scan path hoặc truy\ncập sai endpoint\nuser_agent_score Điểm nghi ngờ từ chuỗi\nuser-agent\nPhát hiện crawler, script hoặc\nuser-agent rỗng\nQuy trình trên phù hợp với giai đoạn đồ án vì vừa đủ đơn giản",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 56,
+            "metadata": {
+              "chapter": 2,
+              "section": "2.6",
+              "section_title": "Quy trình xử lý dữ liệu Machine Learning",
+              "char_start": 0,
+              "char_end": 797,
+              "tokens": 197,
+              "strategy": "B",
+              "chapter_title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG"
+            },
+            "score": 0.827968,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p38:0-535 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 38]\n- Thống kê hiệu suất mô hình Machine Learning.\n2.2.2. Yêu cầu phi chức năng\nBên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu\ncầu phi chức năng sau:\nHiệu năng\nHệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ\nthấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập\nnhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ\nthống cần xử lý được nhiều request đồng thời mà không ảnh hưởng đáng kể đến hiệu\nnăng website.\n\n[B:doan-bot-traffic-2026:p53:0-328 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 53]\nvà session id.\nAPI Service chịu trách nhiệm kiểm tra API key, loại bỏ dữ liệu thiếu trường bắt\nbuộc, sau đó ghi dữ liệu vào bảng request log và cập nhật thông tin session tương ứng.\nĐối với dữ liệu phát sinh liên tục, hệ thống ưu tiên ghi nhanh vào database, sau đó\nxử lý feature ở bước sau nhằm giảm độ trễ khi website gửi log.\n\n[B:doan-bot-traffic-2026:p56:0-797 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 56]\nBảng 2.14.Tập đặc trưng sử dụng cho mô hình\nFeature Công thức/nguồn tính Ý nghĩa trong phát hiện bot\nrequests_per_minute Số request / thời lượng\nphiên theo phút\nPhát hiện truy cập tự động tần\nsuất cao\nsession_duration Thời điểm cuối - thời điểm\nđầu trong session\nPhân biệt phiên tự nhiên và\nphiên quá ngắn\npage_views Tổng số trang/request trong\nsession\nĐánh giá mức độ hoạt động\nunique_pages Số URL khác nhau trong\nsession\nNhận diện bot lặp lại một số\nendpoint\naverage_interval Trung bình thời gian giữa\nhai request\nPhát hiện nhịp request đều bất\nthường\nerror_rate Tỷ lệ request lỗi 4xx/5xx Phát hiện scan path hoặc truy\ncập sai endpoint\nuser_agent_score Điểm nghi ngờ từ chuỗi\nuser-agent\nPhát hiện crawler, script hoặc\nuser-agent rỗng\nQuy trình trên phù hợp với giai đoạn đồ án vì vừa đủ đơn giản",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p38:0-535",
+          "B:doan-bot-traffic-2026:p53:0-328",
+          "B:doan-bot-traffic-2026:p56:0-797"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01WsUv1KS9YgEQyTt4AQd37pzU",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 4106.0,
+        "input_chars": 1434,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 47,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 47,
+              "output_tokens": 36,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 36,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00072,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Chương 2 yêu cầu phi chức năng hiệu năng thời gian phản hồi API tối đa bao lâu"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01miG91HXgFmnjqTJ7rpo5LKJG",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 9460.2,
+        "input_chars": 3445,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 634,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 634,
+              "output_tokens": 44,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 44,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00088,
+        "text": "Thời gian phản hồi API tối đa là **2 giây** đối với các request thông thường. [B:doan-bot-traffic-2026:p38:0-535]",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "Chương 2 yêu cầu phi chức năng hiệu năng thời gian phản hồi API tối đa bao lâu",
+        "applied_filter": {
+          "chapter": 2
+        },
+        "n": 3,
+        "latency_ms": 40.5
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p38:0-535",
+      "B:doan-bot-traffic-2026:p53:0-328",
+      "B:doan-bot-traffic-2026:p56:0-797"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p38:0-535 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 38]\n- Thống kê hiệu suất mô hình Machine Learning.\n2.2.2. Yêu cầu phi chức năng\nBên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu\ncầu phi chức năng sau:\nHiệu năng\nHệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ\nthấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập\nnhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ\nthống cần xử lý được nhiều request đồng thời mà không ảnh hưởng đáng kể đến hiệu\nnăng website.\n\n[B:doan-bot-traffic-2026:p53:0-328 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 53]\nvà session id.\nAPI Service chịu trách nhiệm kiểm tra API key, loại bỏ dữ liệu thiếu trường bắt\nbuộc, sau đó ghi dữ liệu vào bảng request log và cập nhật thông tin session tương ứng.\nĐối với dữ liệu phát sinh liên tục, hệ thống ưu tiên ghi nhanh vào database, sau đó\nxử lý feature ở bước sau nhằm giảm độ trễ khi website gửi log.\n\n[B:doan-bot-traffic-2026:p56:0-797 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 56]\nBảng 2.14.Tập đặc trưng sử dụng cho mô hình\nFeature Công thức/nguồn tính Ý nghĩa trong phát hiện bot\nrequests_per_minute Số request / thời lượng\nphiên theo phút\nPhát hiện truy cập tự động tần\nsuất cao\nsession_duration Thời điểm cuối - thời điểm\nđầu trong session\nPhân biệt phiên tự nhiên và\nphiên quá ngắn\npage_views Tổng số trang/request trong\nsession\nĐánh giá mức độ hoạt động\nunique_pages Số URL khác nhau trong\nsession\nNhận diện bot lặp lại một số\nendpoint\naverage_interval Trung bình thời gian giữa\nhai request\nPhát hiện nhịp request đều bất\nthường\nerror_rate Tỷ lệ request lỗi 4xx/5xx Phát hiện scan path hoặc truy\ncập sai endpoint\nuser_agent_score Điểm nghi ngờ từ chuỗi\nuser-agent\nPhát hiện crawler, script hoặc\nuser-agent rỗng\nQuy trình trên phù hợp với giai đoạn đồ án vì vừa đủ đơn giản",
+    "latency_ms": 13606.9,
+    "input_chars": 4879,
+    "output_tokens": 80,
+    "output_cost_usd_est": 0.0016,
+    "error": null
+  },
+  {
+    "query_id": "q23",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "So với cách phát hiện dựa trên luật, Random Forest xử lý thế nào một session có tần suất request không quá cao nhưng có các dấu hiệu khác đáng ngờ?",
+    "filter": null,
+    "status": "answered",
+    "answer": "So với rule-based chỉ phát hiện tốt các trường hợp rõ ràng như request quá dày hoặc User-Agent chứa chuỗi bot, Random Forest phân tích đồng thời nhiều đặc trưng. Vì vậy, một session dù không có RPM cao nhưng có khoảng cách request đều, ít trang truy cập và tỷ lệ lỗi cao vẫn có thể bị đánh dấu đáng ngờ [B:doan-bot-traffic-2026:p77:0-538].",
+    "citations": [
+      "B:doan-bot-traffic-2026:p77:0-538"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Random Forest xử lý session tần suất request không cao nhưng có các dấu hiệu khác đáng ngờ so với phát hiện dựa trên luật",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p77:0-538",
+            "text": "Random Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử\nnghiệm, phù hợp làm mô\nhình chính\nSo với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot\ndo phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ\nràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest\ncó thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có\nRPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị\nđánh dấu nghi ngờ.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 77,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.20",
+              "section_title": "So sánh Random Forest với một số mô hình khác",
+              "char_start": 0,
+              "char_end": 538,
+              "tokens": 141,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.87385,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p77:960-1649",
+            "text": "Bảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest\nFeature Importance Diễn giải\nrequests_per_minute 0,28 Tác động lớn nhất; bot thường\ngửi request nhanh hơn người\ndùng thật\naverage_interval 0,21 Khoảng cách request quá đều\nhoặc quá ngắn là dấu hiệu tự\nđộng hóa\nuser_agent_score 0,17 Phát hiện user-agent rỗng,\nbất thường hoặc chứa chuỗi\ncrawler/script\nunique_pages 0,14 Bot thường lặp lại ít endpoint\nthay vì duyệt nhiều trang khác\nnhau\nerror_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh\nhành vi scan path hoặc truy cập\nsai endpoint\nsession_duration 0,07 Phiên quá ngắn hoặc quá dài bất\nthường có thể cần kiểm tra\npage_views 0,04 Bổ trợ đánh giá mức độ hoạt\nđộng của session",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 77,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.21",
+              "section_title": "Phân tích feature importance và ý nghĩa hành vi",
+              "char_start": 960,
+              "char_end": 1649,
+              "tokens": 181,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.860057,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p63:0-783",
+            "text": "3.4. Đánh giá mô hình Machine Learning\nMô hình Random Forest được sử dụng làm mô hình chính để phân loại traffic\nthành hai lớp: người dùng thật và bot traffic. Bộ đặc trưng gồm requests_per_minute, session_duration, page_views, unique_pages, average_interval, error_rate và user_agent_score.\nCác đặc trưng này phản ánh trực tiếp hành vi truy cập, do đó phù hợp với bài toán phát\nhiện bot dựa trên hành vi thay vì chỉ dựa vào blacklist IP .\nKết quả thực nghiệm trên dữ liệu hiện tại cho thấy mô hình có khả năng phân biệt\ntốt các mẫu bot rõ ràng, đặc biệt là các session có tần suất request cao, thời gian giữa hai\nrequest quá ngắn hoặc truy cập lặp lại ít trang. Những mẫu người dùng thật thường có\nsession_duration dài hơn, unique_pages đa dạng hơn và average_interval tự nhiên hơn.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 63,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.4",
+              "section_title": "Đánh giá mô hình Machine Learning",
+              "char_start": 0,
+              "char_end": 783,
+              "tokens": 202,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.848059,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p77:0-538 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 77]\nRandom Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử\nnghiệm, phù hợp làm mô\nhình chính\nSo với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot\ndo phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ\nràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest\ncó thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có\nRPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị\nđánh dấu nghi ngờ.\n\n[B:doan-bot-traffic-2026:p77:960-1649 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 77]\nBảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest\nFeature Importance Diễn giải\nrequests_per_minute 0,28 Tác động lớn nhất; bot thường\ngửi request nhanh hơn người\ndùng thật\naverage_interval 0,21 Khoảng cách request quá đều\nhoặc quá ngắn là dấu hiệu tự\nđộng hóa\nuser_agent_score 0,17 Phát hiện user-agent rỗng,\nbất thường hoặc chứa chuỗi\ncrawler/script\nunique_pages 0,14 Bot thường lặp lại ít endpoint\nthay vì duyệt nhiều trang khác\nnhau\nerror_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh\nhành vi scan path hoặc truy cập\nsai endpoint\nsession_duration 0,07 Phiên quá ngắn hoặc quá dài bất\nthường có thể cần kiểm tra\npage_views 0,04 Bổ trợ đánh giá mức độ hoạt\nđộng của session\n\n[B:doan-bot-traffic-2026:p63:0-783 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 63]\n3.4. Đánh giá mô hình Machine Learning\nMô hình Random Forest được sử dụng làm mô hình chính để phân loại traffic\nthành hai lớp: người dùng thật và bot traffic. Bộ đặc trưng gồm requests_per_minute, session_duration, page_views, unique_pages, average_interval, error_rate và user_agent_score.\nCác đặc trưng này phản ánh trực tiếp hành vi truy cập, do đó phù hợp với bài toán phát\nhiện bot dựa trên hành vi thay vì chỉ dựa vào blacklist IP .\nKết quả thực nghiệm trên dữ liệu hiện tại cho thấy mô hình có khả năng phân biệt\ntốt các mẫu bot rõ ràng, đặc biệt là các session có tần suất request cao, thời gian giữa hai\nrequest quá ngắn hoặc truy cập lặp lại ít trang. Những mẫu người dùng thật thường có\nsession_duration dài hơn, unique_pages đa dạng hơn và average_interval tự nhiên hơn.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p77:0-538",
+          "B:doan-bot-traffic-2026:p77:960-1649",
+          "B:doan-bot-traffic-2026:p63:0-783"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01wDgLovfN6iN9riJ2fJAmaxMc",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 4553.0,
+        "input_chars": 1480,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 57,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 57,
+              "output_tokens": 44,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 44,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00088,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Random Forest xử lý session tần suất request không cao nhưng có các dấu hiệu khác đáng ngờ so với phát hiện dựa trên luật"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01eksjGoMGEWUrCPqBqEAF5AeD",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 5382.0,
+        "input_chars": 3887,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 748,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 748,
+              "output_tokens": 117,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 117,
+          "output_tokens_details": {
+            "thinking_tokens": 19
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00234,
+        "text": "So với rule-based chỉ phát hiện tốt các trường hợp rõ ràng như request quá dày hoặc User-Agent chứa chuỗi bot, Random Forest phân tích đồng thời nhiều đặc trưng. Vì vậy, một session dù không có RPM cao nhưng có khoảng cách request đều, ít trang truy cập và tỷ lệ lỗi cao vẫn có thể bị đánh dấu đáng ngờ [B:doan-bot-traffic-2026:p77:0-538].",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "Random Forest xử lý session tần suất request không cao nhưng có các dấu hiệu khác đáng ngờ so với phát hiện dựa trên luật",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 58.2
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p77:0-538",
+      "B:doan-bot-traffic-2026:p77:960-1649",
+      "B:doan-bot-traffic-2026:p63:0-783"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p77:0-538 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 77]\nRandom Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử\nnghiệm, phù hợp làm mô\nhình chính\nSo với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot\ndo phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ\nràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest\ncó thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có\nRPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị\nđánh dấu nghi ngờ.\n\n[B:doan-bot-traffic-2026:p77:960-1649 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 77]\nBảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest\nFeature Importance Diễn giải\nrequests_per_minute 0,28 Tác động lớn nhất; bot thường\ngửi request nhanh hơn người\ndùng thật\naverage_interval 0,21 Khoảng cách request quá đều\nhoặc quá ngắn là dấu hiệu tự\nđộng hóa\nuser_agent_score 0,17 Phát hiện user-agent rỗng,\nbất thường hoặc chứa chuỗi\ncrawler/script\nunique_pages 0,14 Bot thường lặp lại ít endpoint\nthay vì duyệt nhiều trang khác\nnhau\nerror_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh\nhành vi scan path hoặc truy cập\nsai endpoint\nsession_duration 0,07 Phiên quá ngắn hoặc quá dài bất\nthường có thể cần kiểm tra\npage_views 0,04 Bổ trợ đánh giá mức độ hoạt\nđộng của session\n\n[B:doan-bot-traffic-2026:p63:0-783 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 63]\n3.4. Đánh giá mô hình Machine Learning\nMô hình Random Forest được sử dụng làm mô hình chính để phân loại traffic\nthành hai lớp: người dùng thật và bot traffic. Bộ đặc trưng gồm requests_per_minute, session_duration, page_views, unique_pages, average_interval, error_rate và user_agent_score.\nCác đặc trưng này phản ánh trực tiếp hành vi truy cập, do đó phù hợp với bài toán phát\nhiện bot dựa trên hành vi thay vì chỉ dựa vào blacklist IP .\nKết quả thực nghiệm trên dữ liệu hiện tại cho thấy mô hình có khả năng phân biệt\ntốt các mẫu bot rõ ràng, đặc biệt là các session có tần suất request cao, thời gian giữa hai\nrequest quá ngắn hoặc truy cập lặp lại ít trang. Những mẫu người dùng thật thường có\nsession_duration dài hơn, unique_pages đa dạng hơn và average_interval tự nhiên hơn.",
+    "latency_ms": 9993.5,
+    "input_chars": 5367,
+    "output_tokens": 161,
+    "output_cost_usd_est": 0.00322,
+    "error": null
+  },
+  {
+    "query_id": "q24",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Điểm yếu đầu tiên mà đồ án tự nhận về dữ liệu thực nghiệm là gì?",
+    "filter": null,
+    "status": "answered",
+    "answer": "Điểm yếu đầu tiên là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi trong môi trường thực tế. [B:doan-bot-traffic-2026:p66:1236-1583]",
+    "citations": [
+      "B:doan-bot-traffic-2026:p66:1236-1583"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "điểm yếu đầu tiên đồ án tự nhận về dữ liệu thực nghiệm hạn chế dữ liệu thực nghiệm",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p66:1236-1583",
+            "text": "Mặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các\nkiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở\nban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá\ntrên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 66,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.8",
+              "section_title": "Nhận xét chung sau thực nghiệm",
+              "char_start": 1236,
+              "char_end": 1583,
+              "tokens": 89,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.862028,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p69:0-480",
+            "text": "Gọi trực tiếp AI\nService\nBypass backend\nvalidation\nTăng tải hoặc lỗi dự\nđoán\nĐặt AI Service trong\nmạng nội bộ\nDữ liệu đầu vào\nsai schema\nThiếu feature\nhoặc sai kiểu dữ\nliệu\nDự đoán lỗi hoặc sai\nnhãn\nValidate schema trước\nkhi lưu/gọi model\nTruy vấn dashboard không\nphân quyền\nNgười dùng\nxem dữ liệu\nkhông thuộc\nquyền\nRò rỉ dữ liệu traffic RBAC và kiểm tra ownership\nDatabase tăng\nnhanh\nDữ liệu cũ\nkhông được\nquản lý\nChậm truy vấn và khó\nsao lưu\nArchive, partition và\nbackup định kỳ",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 69,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.11",
+              "section_title": "Đánh giá bảo mật và độ tin cậy khi triển khai",
+              "char_start": 0,
+              "char_end": 480,
+              "tokens": 118,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.853368,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p85:1651-2425",
+            "text": "Hạn chế thứ hai là hệ thống chưa triển khai đầy đủ các thành phần vận hành nâng\ncao như message queue, distributed tracing, monitoring tự động, cơ chế retraining định\nkỳ và đánh giá data drift. Khi traffic tăng mạnh, các thành phần như database, Traffic\nAPI và AI Service cần được tối ưu thêm để đảm bảo hiệu năng.\nHạn chế thứ ba là khả năng giải thích mô hình mới dừng ở mức feature importance\nvà confidence. Trong môi trường doanh nghiệp, người quản trị cần thông tin chi tiết hơn\nđể hiểu vì sao một session bị đánh dấu là bot, từ đó quyết định có chặn, theo dõi hay bỏ\nqua cảnh báo.\n3. Hướng phát triển\nTrong thời gian tới, hệ thống có thể được phát triển theo hướng thu thập dữ liệu\nthực tế từ nhiều website để tăng độ đa dạng của dataset. Việc gán nhãn cần kết hợp giữa",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 85,
+            "metadata": {
+              "section": "KẾT LUẬN",
+              "section_title": "KẾT LUẬN",
+              "char_start": 1651,
+              "char_end": 2425,
+              "tokens": 184,
+              "strategy": "B",
+              "chapter_title": "KẾT LUẬN"
+            },
+            "score": 0.845978,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p66:1236-1583 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 66]\nMặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các\nkiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở\nban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá\ntrên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.\n\n[B:doan-bot-traffic-2026:p69:0-480 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 69]\nGọi trực tiếp AI\nService\nBypass backend\nvalidation\nTăng tải hoặc lỗi dự\nđoán\nĐặt AI Service trong\nmạng nội bộ\nDữ liệu đầu vào\nsai schema\nThiếu feature\nhoặc sai kiểu dữ\nliệu\nDự đoán lỗi hoặc sai\nnhãn\nValidate schema trước\nkhi lưu/gọi model\nTruy vấn dashboard không\nphân quyền\nNgười dùng\nxem dữ liệu\nkhông thuộc\nquyền\nRò rỉ dữ liệu traffic RBAC và kiểm tra ownership\nDatabase tăng\nnhanh\nDữ liệu cũ\nkhông được\nquản lý\nChậm truy vấn và khó\nsao lưu\nArchive, partition và\nbackup định kỳ\n\n[B:doan-bot-traffic-2026:p85:1651-2425 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 85]\nHạn chế thứ hai là hệ thống chưa triển khai đầy đủ các thành phần vận hành nâng\ncao như message queue, distributed tracing, monitoring tự động, cơ chế retraining định\nkỳ và đánh giá data drift. Khi traffic tăng mạnh, các thành phần như database, Traffic\nAPI và AI Service cần được tối ưu thêm để đảm bảo hiệu năng.\nHạn chế thứ ba là khả năng giải thích mô hình mới dừng ở mức feature importance\nvà confidence. Trong môi trường doanh nghiệp, người quản trị cần thông tin chi tiết hơn\nđể hiểu vì sao một session bị đánh dấu là bot, từ đó quyết định có chặn, theo dõi hay bỏ\nqua cảnh báo.\n3. Hướng phát triển\nTrong thời gian tới, hệ thống có thể được phát triển theo hướng thu thập dữ liệu\nthực tế từ nhiều website để tăng độ đa dạng của dataset. Việc gán nhãn cần kết hợp giữa",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p66:1236-1583",
+          "B:doan-bot-traffic-2026:p69:0-480",
+          "B:doan-bot-traffic-2026:p85:1651-2425"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01Y3amv2JFGn9UARpj51ZqeCZY",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 3802.6,
+        "input_chars": 1397,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 39,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 39,
+              "output_tokens": 37,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 37,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00074,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "điểm yếu đầu tiên đồ án tự nhận về dữ liệu thực nghiệm hạn chế dữ liệu thực nghiệm"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01aXKUrgEjWhKmWM8XSn9BkU4m",
+        "stop_reason": "end_turn",
+        "searches_left": 3,
+        "latency_ms": 5032.8,
+        "input_chars": 3361,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 626,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 626,
+              "output_tokens": 83,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 83,
+          "output_tokens_details": {
+            "thinking_tokens": 26
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00166,
+        "text": "Điểm yếu đầu tiên là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi trong môi trường thực tế. [B:doan-bot-traffic-2026:p66:1236-1583]",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "điểm yếu đầu tiên đồ án tự nhận về dữ liệu thực nghiệm hạn chế dữ liệu thực nghiệm",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 51.9
+      }
+    ],
+    "n_llm_calls": 2,
+    "n_searches": 1,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p66:1236-1583",
+      "B:doan-bot-traffic-2026:p69:0-480",
+      "B:doan-bot-traffic-2026:p85:1651-2425"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p66:1236-1583 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 66]\nMặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các\nkiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở\nban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá\ntrên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.\n\n[B:doan-bot-traffic-2026:p69:0-480 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 69]\nGọi trực tiếp AI\nService\nBypass backend\nvalidation\nTăng tải hoặc lỗi dự\nđoán\nĐặt AI Service trong\nmạng nội bộ\nDữ liệu đầu vào\nsai schema\nThiếu feature\nhoặc sai kiểu dữ\nliệu\nDự đoán lỗi hoặc sai\nnhãn\nValidate schema trước\nkhi lưu/gọi model\nTruy vấn dashboard không\nphân quyền\nNgười dùng\nxem dữ liệu\nkhông thuộc\nquyền\nRò rỉ dữ liệu traffic RBAC và kiểm tra ownership\nDatabase tăng\nnhanh\nDữ liệu cũ\nkhông được\nquản lý\nChậm truy vấn và khó\nsao lưu\nArchive, partition và\nbackup định kỳ\n\n[B:doan-bot-traffic-2026:p85:1651-2425 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 85]\nHạn chế thứ hai là hệ thống chưa triển khai đầy đủ các thành phần vận hành nâng\ncao như message queue, distributed tracing, monitoring tự động, cơ chế retraining định\nkỳ và đánh giá data drift. Khi traffic tăng mạnh, các thành phần như database, Traffic\nAPI và AI Service cần được tối ưu thêm để đảm bảo hiệu năng.\nHạn chế thứ ba là khả năng giải thích mô hình mới dừng ở mức feature importance\nvà confidence. Trong môi trường doanh nghiệp, người quản trị cần thông tin chi tiết hơn\nđể hiểu vì sao một session bị đánh dấu là bot, từ đó quyết định có chặn, theo dõi hay bỏ\nqua cảnh báo.\n3. Hướng phát triển\nTrong thời gian tới, hệ thống có thể được phát triển theo hướng thu thập dữ liệu\nthực tế từ nhiều website để tăng độ đa dạng của dataset. Việc gán nhãn cần kết hợp giữa",
+    "latency_ms": 8887.5,
+    "input_chars": 4758,
+    "output_tokens": 120,
+    "output_cost_usd_est": 0.0024,
+    "error": null
+  },
+  {
+    "query_id": "q27",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Trong phần thực nghiệm so sánh mô hình, mô hình LSTM đạt F1-score bao nhiêu?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "phần thực nghiệm so sánh các mô hình LSTM đạt F1-score bao nhiêu giá trị F1 score",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p75:1103-1885",
+            "text": "Bảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 75,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.19",
+              "section_title": "Đánh giá định lượng mô hình và ma trận nhầm lẫn",
+              "char_start": 1103,
+              "char_end": 1885,
+              "tokens": 212,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.853616,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p75:0-678",
+            "text": "Tập huấn luyện 8.000 session 80% Dùng để huấn luyện\nRandom Forest và điều\nchỉnh pipeline feature\nTập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall\nvà F1-score\nTừ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu\ncủa cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi\ntrường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ\nmẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn\nnhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,\noversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 75,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.18",
+              "section_title": "Bổ sung số liệu thực nghiệm và phân bố dataset",
+              "char_start": 0,
+              "char_end": 678,
+              "tokens": 171,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.850847,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p23:702-1303",
+            "text": "Bảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 23,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.4",
+              "section_title": "Các thuật toán Machine Learning phù hợp với bài toán phát hiện traffic bất",
+              "char_start": 702,
+              "char_end": 1303,
+              "tokens": 146,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.846571,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p75:1103-1885 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nBảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử\n\n[B:doan-bot-traffic-2026:p75:0-678 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nTập huấn luyện 8.000 session 80% Dùng để huấn luyện\nRandom Forest và điều\nchỉnh pipeline feature\nTập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall\nvà F1-score\nTừ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu\ncủa cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi\ntrường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ\nmẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn\nnhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,\noversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.\n\n[B:doan-bot-traffic-2026:p23:702-1303 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\nBảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p75:1103-1885",
+          "B:doan-bot-traffic-2026:p75:0-678",
+          "B:doan-bot-traffic-2026:p23:702-1303"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Trong phần thực nghiệm so sánh mô hình, bảng kết quả có mô hình LSTM và chỉ số F1-score của LSTM là bao nhiêu",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p63:1284-1953",
+            "text": "Bảng 3.4.Ý nghĩa các chỉ số đánh giá mô hình\nChỉ số Ý nghĩa Cách diễn giải trongbài toán Rủi ro nếu chỉ số thấp\nAccuracy Tỷ lệ dự đoán đúng\ntổng thể\nCho biết mô hình đúng\nbao nhiêu mẫu trên tập\ntest\nCó thể gây hiểu nhầm\nnếu dữ liệu mất cân bằng\nPrecision Tỷ lệ mẫu dự đoán\nlà bot thật sự là bot\nQuan trọng để tránh\nchặn nhầm người dùng\nthật\nFalse positive cao\nRecall Tỷ lệ bot thật được\nphát hiện\nQuan trọng để giảm bot\nlọt qua hệ thống\nFalse negative cao\nF1-score Trung bình điều\nhòa Precision và\nRecall\nĐánh giá cân bằng hai\nmục tiêu\nMô hình mất cân bằng\nConfusion\nMatrix\nMa trận đúng/sai\ntừng lớp\nPhân tích TP, TN, FP,\nFN\nKhó biết lỗi ở lớp nào\nnếu không xem ma trận",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 63,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.4",
+              "section_title": "Đánh giá mô hình Machine Learning",
+              "char_start": 1284,
+              "char_end": 1953,
+              "tokens": 178,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.852395,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p23:702-1303",
+            "text": "Bảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 23,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.4",
+              "section_title": "Các thuật toán Machine Learning phù hợp với bài toán phát hiện traffic bất",
+              "char_start": 702,
+              "char_end": 1303,
+              "tokens": 146,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.852156,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p75:1103-1885",
+            "text": "Bảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 75,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.19",
+              "section_title": "Đánh giá định lượng mô hình và ma trận nhầm lẫn",
+              "char_start": 1103,
+              "char_end": 1885,
+              "tokens": 212,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.85157,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p63:1284-1953 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 63]\nBảng 3.4.Ý nghĩa các chỉ số đánh giá mô hình\nChỉ số Ý nghĩa Cách diễn giải trongbài toán Rủi ro nếu chỉ số thấp\nAccuracy Tỷ lệ dự đoán đúng\ntổng thể\nCho biết mô hình đúng\nbao nhiêu mẫu trên tập\ntest\nCó thể gây hiểu nhầm\nnếu dữ liệu mất cân bằng\nPrecision Tỷ lệ mẫu dự đoán\nlà bot thật sự là bot\nQuan trọng để tránh\nchặn nhầm người dùng\nthật\nFalse positive cao\nRecall Tỷ lệ bot thật được\nphát hiện\nQuan trọng để giảm bot\nlọt qua hệ thống\nFalse negative cao\nF1-score Trung bình điều\nhòa Precision và\nRecall\nĐánh giá cân bằng hai\nmục tiêu\nMô hình mất cân bằng\nConfusion\nMatrix\nMa trận đúng/sai\ntừng lớp\nPhân tích TP, TN, FP,\nFN\nKhó biết lỗi ở lớp nào\nnếu không xem ma trận\n\n[B:doan-bot-traffic-2026:p23:702-1303 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\nBảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới\n\n[B:doan-bot-traffic-2026:p75:1103-1885 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 75]\nBảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session\nThực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng\nReal traffic 1.298 72 1.370\nBot traffic 51 579 630\nTổng 1.349 651 2.000\nTừ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị\nđánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng\n91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp\nbot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot\nvà hạn chế cảnh báo nhầm.\nBảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest\nChỉ số Giá trị Ý nghĩa trong hệ thống\nAccuracy 93,85% Tỷ lệ dự đoán đúng tổng thể\ntrên tập kiểm thử",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p63:1284-1953",
+          "B:doan-bot-traffic-2026:p23:702-1303",
+          "B:doan-bot-traffic-2026:p75:1103-1885"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Trong phần thực nghiệm so sánh các mô hình, tìm bảng kết quả có mô hình LSTM và giá trị F1-score tương ứng của LSTM.",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p23:702-1303",
+            "text": "Bảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 23,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.4",
+              "section_title": "Các thuật toán Machine Learning phù hợp với bài toán phát hiện traffic bất",
+              "char_start": 702,
+              "char_end": 1303,
+              "tokens": 146,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.86845,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p63:1284-1953",
+            "text": "Bảng 3.4.Ý nghĩa các chỉ số đánh giá mô hình\nChỉ số Ý nghĩa Cách diễn giải trongbài toán Rủi ro nếu chỉ số thấp\nAccuracy Tỷ lệ dự đoán đúng\ntổng thể\nCho biết mô hình đúng\nbao nhiêu mẫu trên tập\ntest\nCó thể gây hiểu nhầm\nnếu dữ liệu mất cân bằng\nPrecision Tỷ lệ mẫu dự đoán\nlà bot thật sự là bot\nQuan trọng để tránh\nchặn nhầm người dùng\nthật\nFalse positive cao\nRecall Tỷ lệ bot thật được\nphát hiện\nQuan trọng để giảm bot\nlọt qua hệ thống\nFalse negative cao\nF1-score Trung bình điều\nhòa Precision và\nRecall\nĐánh giá cân bằng hai\nmục tiêu\nMô hình mất cân bằng\nConfusion\nMatrix\nMa trận đúng/sai\ntừng lớp\nPhân tích TP, TN, FP,\nFN\nKhó biết lỗi ở lớp nào\nnếu không xem ma trận",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 63,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.4",
+              "section_title": "Đánh giá mô hình Machine Learning",
+              "char_start": 1284,
+              "char_end": 1953,
+              "tokens": 178,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.865593,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p74:0-719",
+            "text": "Bảng 3.16.Bài học rút ra từ quá trình thực nghiệm\nBài học Ý nghĩa Áp dụng cho phiênbản tiếp theo\nThiết kế dữ liệu trước khi\nhuấn luyện\nFeature tốt phụ thuộc log\nđầy đủ và nhất quán\nChuẩn hóa schema\ntracking ngay từ đầu\nKhông chỉ nhìn Accuracy\nAccuracy cao có thể che\ngiấu false positive/false\nnegative\nLuôn theo dõi Precision,\nRecall, F1-score\nTách dữ liệu thô và kết\nquả dự đoán\nGiúp truy vết và huấn\nluyện lại dễ hơn\nLưu log, feature, prediction ở các bảng riêng\nKiểm thử tích hợp rất\nquan trọng\nCác service đúng riêng\nlẻ vẫn có thể lỗi khi kết\nnối\nDùng test end-to-end\ncho luồng log\u0019AI\u0019\ndashboard\nDashboard cần giải thích\nđược cảnh báo\nAdmin cần biết vì sao\ntraffic bị nghi ngờ\nHiển thị feature nổi bật\nvà confidence",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 74,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.17",
+              "section_title": "Bài học rút ra từ quá trình thực nghiệm",
+              "char_start": 0,
+              "char_end": 719,
+              "tokens": 184,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.852081,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p23:702-1303 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\nBảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới\n\n[B:doan-bot-traffic-2026:p63:1284-1953 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 63]\nBảng 3.4.Ý nghĩa các chỉ số đánh giá mô hình\nChỉ số Ý nghĩa Cách diễn giải trongbài toán Rủi ro nếu chỉ số thấp\nAccuracy Tỷ lệ dự đoán đúng\ntổng thể\nCho biết mô hình đúng\nbao nhiêu mẫu trên tập\ntest\nCó thể gây hiểu nhầm\nnếu dữ liệu mất cân bằng\nPrecision Tỷ lệ mẫu dự đoán\nlà bot thật sự là bot\nQuan trọng để tránh\nchặn nhầm người dùng\nthật\nFalse positive cao\nRecall Tỷ lệ bot thật được\nphát hiện\nQuan trọng để giảm bot\nlọt qua hệ thống\nFalse negative cao\nF1-score Trung bình điều\nhòa Precision và\nRecall\nĐánh giá cân bằng hai\nmục tiêu\nMô hình mất cân bằng\nConfusion\nMatrix\nMa trận đúng/sai\ntừng lớp\nPhân tích TP, TN, FP,\nFN\nKhó biết lỗi ở lớp nào\nnếu không xem ma trận\n\n[B:doan-bot-traffic-2026:p74:0-719 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 74]\nBảng 3.16.Bài học rút ra từ quá trình thực nghiệm\nBài học Ý nghĩa Áp dụng cho phiênbản tiếp theo\nThiết kế dữ liệu trước khi\nhuấn luyện\nFeature tốt phụ thuộc log\nđầy đủ và nhất quán\nChuẩn hóa schema\ntracking ngay từ đầu\nKhông chỉ nhìn Accuracy\nAccuracy cao có thể che\ngiấu false positive/false\nnegative\nLuôn theo dõi Precision,\nRecall, F1-score\nTách dữ liệu thô và kết\nquả dự đoán\nGiúp truy vết và huấn\nluyện lại dễ hơn\nLưu log, feature, prediction ở các bảng riêng\nKiểm thử tích hợp rất\nquan trọng\nCác service đúng riêng\nlẻ vẫn có thể lỗi khi kết\nnối\nDùng test end-to-end\ncho luồng log\u0019AI\u0019\ndashboard\nDashboard cần giải thích\nđược cảnh báo\nAdmin cần biết vì sao\ntraffic bị nghi ngờ\nHiển thị feature nổi bật\nvà confidence",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p23:702-1303",
+          "B:doan-bot-traffic-2026:p63:1284-1953",
+          "B:doan-bot-traffic-2026:p74:0-719"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_012hVk7YeXZy5bs8xnjoPzPW9s",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 206498.7,
+        "input_chars": 1409,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 43,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 43,
+              "output_tokens": 40,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 40,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.0008,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "phần thực nghiệm so sánh các mô hình LSTM đạt F1-score bao nhiêu giá trị F1 score"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01Qdo6KFM3QAERiErob5cfaHsv",
+        "stop_reason": "tool_use",
+        "searches_left": 3,
+        "latency_ms": 5122.6,
+        "input_chars": 3831,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 819,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 819,
+              "output_tokens": 58,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 58,
+          "output_tokens_details": {
+            "thinking_tokens": 9
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00116,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Trong phần thực nghiệm so sánh mô hình, bảng kết quả có mô hình LSTM và chỉ số F1-score của LSTM là bao nhiêu"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01FtmxPPh8aYuPg6oEkx8KoitU",
+        "stop_reason": "tool_use",
+        "searches_left": 2,
+        "latency_ms": 5465.9,
+        "input_chars": 3937,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 881,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 881,
+              "output_tokens": 77,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 77,
+          "output_tokens_details": {
+            "thinking_tokens": 27
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00154,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Trong phần thực nghiệm so sánh các mô hình, tìm bảng kết quả có mô hình LSTM và giá trị F1-score tương ứng của LSTM."
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_019dUzWzTz3Mzr5XrWdpHK1cMT",
+        "stop_reason": "end_turn",
+        "searches_left": 1,
+        "latency_ms": 4368.2,
+        "input_chars": 3988,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 871,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 871,
+              "output_tokens": 34,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 34,
+          "output_tokens_details": {
+            "thinking_tokens": 20
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00068,
+        "text": "Không đủ bằng chứng để trả lời.",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "phần thực nghiệm so sánh các mô hình LSTM đạt F1-score bao nhiêu giá trị F1 score",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 1446.0
+      },
+      {
+        "query": "Trong phần thực nghiệm so sánh mô hình, bảng kết quả có mô hình LSTM và chỉ số F1-score của LSTM là bao nhiêu",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 67.1
+      },
+      {
+        "query": "Trong phần thực nghiệm so sánh các mô hình, tìm bảng kết quả có mô hình LSTM và giá trị F1-score tương ứng của LSTM.",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 68.1
+      }
+    ],
+    "n_llm_calls": 4,
+    "n_searches": 3,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p23:702-1303",
+      "B:doan-bot-traffic-2026:p63:1284-1953",
+      "B:doan-bot-traffic-2026:p74:0-719"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p23:702-1303 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 23]\nBảng 1.1.So sánh các hướng mô hình sử dụng trong bài toán phát hiện bot traffic\nMô hình Vai trò trong hệ thống Ưu điểm chính Hạn chế cần lưu ý\nLogistic Regression Mô hình nền để so sánh Dễ giải thích, huấn\nluyện nhanh\nKhó biểu diễn quan hệ\nphi tuyến phức tạp\nRandom Forest Mô hình phân loại chính Độ ổn định cao, chịu\nnhiễu tốt, có feature\nimportance\nKích thước model lớn\nhơn mô hình tuyến tính\nIsolation Forest Phát hiện bất thường khi\nthiếu nhãn\nPhù hợp anomaly detection\nCần hiệu chỉnh ngưỡng\nbất thường\nRule-based baseline Mốc so sánh truyền\nthống\nDễ triển khai, dễ\nhiểu\nKhó thích nghi với bot\nmới\n\n[B:doan-bot-traffic-2026:p63:1284-1953 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 63]\nBảng 3.4.Ý nghĩa các chỉ số đánh giá mô hình\nChỉ số Ý nghĩa Cách diễn giải trongbài toán Rủi ro nếu chỉ số thấp\nAccuracy Tỷ lệ dự đoán đúng\ntổng thể\nCho biết mô hình đúng\nbao nhiêu mẫu trên tập\ntest\nCó thể gây hiểu nhầm\nnếu dữ liệu mất cân bằng\nPrecision Tỷ lệ mẫu dự đoán\nlà bot thật sự là bot\nQuan trọng để tránh\nchặn nhầm người dùng\nthật\nFalse positive cao\nRecall Tỷ lệ bot thật được\nphát hiện\nQuan trọng để giảm bot\nlọt qua hệ thống\nFalse negative cao\nF1-score Trung bình điều\nhòa Precision và\nRecall\nĐánh giá cân bằng hai\nmục tiêu\nMô hình mất cân bằng\nConfusion\nMatrix\nMa trận đúng/sai\ntừng lớp\nPhân tích TP, TN, FP,\nFN\nKhó biết lỗi ở lớp nào\nnếu không xem ma trận\n\n[B:doan-bot-traffic-2026:p74:0-719 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 74]\nBảng 3.16.Bài học rút ra từ quá trình thực nghiệm\nBài học Ý nghĩa Áp dụng cho phiênbản tiếp theo\nThiết kế dữ liệu trước khi\nhuấn luyện\nFeature tốt phụ thuộc log\nđầy đủ và nhất quán\nChuẩn hóa schema\ntracking ngay từ đầu\nKhông chỉ nhìn Accuracy\nAccuracy cao có thể che\ngiấu false positive/false\nnegative\nLuôn theo dõi Precision,\nRecall, F1-score\nTách dữ liệu thô và kết\nquả dự đoán\nGiúp truy vết và huấn\nluyện lại dễ hơn\nLưu log, feature, prediction ở các bảng riêng\nKiểm thử tích hợp rất\nquan trọng\nCác service đúng riêng\nlẻ vẫn có thể lỗi khi kết\nnối\nDùng test end-to-end\ncho luồng log\u0019AI\u0019\ndashboard\nDashboard cần giải thích\nđược cảnh báo\nAdmin cần biết vì sao\ntraffic bị nghi ngờ\nHiển thị feature nổi bật\nvà confidence",
+    "latency_ms": 223037.1,
+    "input_chars": 13165,
+    "output_tokens": 209,
+    "output_cost_usd_est": 0.00418,
+    "error": null
+  },
+  {
+    "query_id": "q28",
+    "split": "test",
+    "config": "I2",
+    "settings": {
+      "name": "I2",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "fallbacks": true,
+      "retriever": "dense-C",
+      "top_k": 3,
+      "budget": 3000,
+      "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+      "max_searches": 4,
+      "order": "latest-first"
+    },
+    "question": "Chi phí hạ tầng hằng tháng (tính bằng USD) để vận hành hệ thống trong đồ án là bao nhiêu?",
+    "filter": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "chi phí hạ tầng hằng tháng USD vận hành hệ thống đồ án tổng chi phí hàng tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p79:0-533",
+            "text": "3.23. Đánh giá so sánh về chi phí triển khai và khả năng tùy chỉnh\nBên cạnh chất lượng phát hiện bot, yếu tố chi phí và khả năng tùy chỉnh cũng quan\ntrọng đối với doanh nghiệp vừa và nhỏ. Các nền tảng thương mại như Cloudflare Bot\nManagement hoặc Imperva Advanced Bot Protection có nhiều tính năng mạnh, nhưng\nchi phí và yêu cầu hạ tầng có thể vượt quá nhu cầu của một hệ thống demo hoặc một\nwebsite quy mô vừa. Hệ thống trong đồ án hướng đến khả năng tự triển khai, dễ điều\nchỉnh feature và phù hợp với mục tiêu học tập, nghiên cứu.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 79,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.23",
+              "section_title": "Đánh giá so sánh về chi phí triển khai và khả năng tùy chỉnh",
+              "char_start": 0,
+              "char_end": 533,
+              "tokens": 127,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.819423,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p72:969-1576",
+            "text": "Bảng 3.14.Đánh giá khả năng bảo trì và triển khai\nNội dung bảo trì Vấn đề cần kiểm\nsoát Giải pháp đề xuất Lợi ích\nAPI contract Frontend/Backend/AI\ntrả dữ liệu không\nthống nhất\nĐịnh nghĩa schema\nresponse chung\nGiảm lỗi tích\nhợp\nFeature order Sai thứ tự feature khi\ndự đoán\nLưu metadata feature\ntrong model.pkl\nĐảm bảo dự\nđoán đúng\nBiến môi trường Khó chạy lại trên máy\nkhác\nTạo file .env mẫu và\ntài liệu cấu hình\nDễ triển khai\nLogging Lỗi service khó truy\nvết\nLog request id, error\ncode, thời gian xử lý\nDễ debug\nHealth check Không biết service\nnào lỗi\nTạo endpoint /health\ncho từng service\nHỗ trợ monitoring",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 72,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.15",
+              "section_title": "Đánh giá khả năng bảo trì mã nguồn và triển khai thực tế",
+              "char_start": 969,
+              "char_end": 1576,
+              "tokens": 154,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.818115,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p57:0-549",
+            "text": "nâng cấp mô hình. Do đó, đồ án ưu tiên các công nghệ có cộng đồng lớn, tài liệu rõ ràng,\ndễ triển khai trong môi trường học tập nhưng vẫn đủ gần với quy trình phát triển phần\nmềm thực tế.\nCác tiêu chí chính khi lựa chọn công nghệ gồm: khả năng phát triển nhanh, hiệu\nnăng xử lý request, mức độ phù hợp với dữ liệu traffic, khả năng tích hợp giữa các\nservice, chi phí triển khai thấp và khả năng bảo trì lâu dài. Đây cũng là lý do hệ thống\nkhông chọn một kiến trúc nguyên khối duy nhất mà tách thành Frontend, Backend, Go\nAPI, AI Service và Database.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 57,
+            "metadata": {
+              "chapter": 2,
+              "section": "2.7.1",
+              "section_title": "Định hướng lựa chọn công nghệ",
+              "char_start": 0,
+              "char_end": 549,
+              "tokens": 138,
+              "strategy": "B",
+              "chapter_title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG"
+            },
+            "score": 0.811501,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p79:0-533 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 79]\n3.23. Đánh giá so sánh về chi phí triển khai và khả năng tùy chỉnh\nBên cạnh chất lượng phát hiện bot, yếu tố chi phí và khả năng tùy chỉnh cũng quan\ntrọng đối với doanh nghiệp vừa và nhỏ. Các nền tảng thương mại như Cloudflare Bot\nManagement hoặc Imperva Advanced Bot Protection có nhiều tính năng mạnh, nhưng\nchi phí và yêu cầu hạ tầng có thể vượt quá nhu cầu của một hệ thống demo hoặc một\nwebsite quy mô vừa. Hệ thống trong đồ án hướng đến khả năng tự triển khai, dễ điều\nchỉnh feature và phù hợp với mục tiêu học tập, nghiên cứu.\n\n[B:doan-bot-traffic-2026:p72:969-1576 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 72]\nBảng 3.14.Đánh giá khả năng bảo trì và triển khai\nNội dung bảo trì Vấn đề cần kiểm\nsoát Giải pháp đề xuất Lợi ích\nAPI contract Frontend/Backend/AI\ntrả dữ liệu không\nthống nhất\nĐịnh nghĩa schema\nresponse chung\nGiảm lỗi tích\nhợp\nFeature order Sai thứ tự feature khi\ndự đoán\nLưu metadata feature\ntrong model.pkl\nĐảm bảo dự\nđoán đúng\nBiến môi trường Khó chạy lại trên máy\nkhác\nTạo file .env mẫu và\ntài liệu cấu hình\nDễ triển khai\nLogging Lỗi service khó truy\nvết\nLog request id, error\ncode, thời gian xử lý\nDễ debug\nHealth check Không biết service\nnào lỗi\nTạo endpoint /health\ncho từng service\nHỗ trợ monitoring\n\n[B:doan-bot-traffic-2026:p57:0-549 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 57]\nnâng cấp mô hình. Do đó, đồ án ưu tiên các công nghệ có cộng đồng lớn, tài liệu rõ ràng,\ndễ triển khai trong môi trường học tập nhưng vẫn đủ gần với quy trình phát triển phần\nmềm thực tế.\nCác tiêu chí chính khi lựa chọn công nghệ gồm: khả năng phát triển nhanh, hiệu\nnăng xử lý request, mức độ phù hợp với dữ liệu traffic, khả năng tích hợp giữa các\nservice, chi phí triển khai thấp và khả năng bảo trì lâu dài. Đây cũng là lý do hệ thống\nkhông chọn một kiến trúc nguyên khối duy nhất mà tách thành Frontend, Backend, Go\nAPI, AI Service và Database.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p79:0-533",
+          "B:doan-bot-traffic-2026:p72:969-1576",
+          "B:doan-bot-traffic-2026:p57:0-549"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Bảng chi phí hạ tầng hàng tháng vận hành hệ thống USD máy chủ VPS cloud database frontend backend AI service tổng cộng mỗi tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p62:1525-2204",
+            "text": "Bảng 3.3.Đánh giá kết quả triển khai theo từng thành phần\nThành phần Kết quả đạt được Vấn đề còn tồn tại Định hướng cải thiện\nFrontend Dashboard\nHiển thị chỉ số traffic,\nbot traffic, IP đáng\nngờ\nBiểu đồ phụ thuộc\nchất lượng API\nBổ sung lọc nâng cao\nvà drill-down\nBackend Quản lý user, website,\nAPI, dữ liệu traffic\nCần chuẩn hóa response lỗi\nBổ sung logging và\nmiddleware giám sát\nTraffic API Nhận log và ghi dữ\nliệu gần realtime\nChưa có message\nqueue\nTích hợp queue hoặc\nbatch insert\nAI Service Dự đoán nhãn bot/real\nvà confidence\nPhụ thuộc dataset\nban đầu\nRetraining định kỳ\nDatabase Lưu log, session, feature và kết quả\nBảng log tăng nhanh Index, partition,\narchive dữ liệu cũ",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 62,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.3",
+              "section_title": "Kết quả triển khai các thành phần hệ thống",
+              "char_start": 1525,
+              "char_end": 2204,
+              "tokens": 165,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.860426,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p33:0-733",
+            "text": "tích dữ liệu traffic và chạy mô hình Machine Learning nên yêu cầu tài nguyên tính toán\ncao, đặc biệt khi xử lý realtime hoặc huấn luyện mô hình. Trong khi đó, Backend API\nchủ yếu xử lý request người dùng, quản lý session và lưu trữ dữ liệu traffic. Nếu sử dụng\nkiến trúc Monolithic, toàn bộ hệ thống phải scale cùng lúc, gây lãng phí tài nguyên và\nkhó tối ưu hiệu năng.\nThứ hai, sự đa dạng về công nghệ. Frontend sử dụng Next.js và Tailwind CSS để\nxây dựng dashboard trực quan; Backend sử dụng NestJS để quản lý API và session; AI\nService sử dụng Python cùng các thư viện Machine Learning như Scikit-learn, Pandas\nvà NumPy để xử lý dữ liệu và huấn luyện mô hình; API Service sử dụng Golang nhằm\ntăng hiệu năng xử lý request realtime.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 33,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.8.3",
+              "section_title": "Lý do áp dụng vào hệ thống phát hiện bot traffic",
+              "char_start": 0,
+              "char_end": 733,
+              "tokens": 186,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.856474,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p56:1051-1639",
+            "text": "2.7. Công nghệ sử dụng\nBảng 2.15.Công nghệ sử dụng trong hệ thống\nThành phần Công nghệ sử dụng\nFrontend Next.js 16.2.2, React 19.2.4, TypeScript 6.0.2, Ant Design\n6.3.5, Tailwind CSS 4, Recharts 3.8.1, ESLint 9\nBackend NestJS 11, TypeScript 5.7, TypeORM 0.3, MySQL2 driver,\nJWT, bcryptjs, Axios, Google Auth Library\nAI Service Python, Flask 3.1.1, Flask-CORS 5.0.1, scikit-learn 1.6.1\n(Random Forest), pandas 2.2.3, numpy 2.2.6\nGo API Go (net/http), JSON encoding, custom middleware (logging,\ntimeout, CORS)\nInfrastructure/\nDatabase\nDocker Compose, MySQL 8 (containerized, volume persist)",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 56,
+            "metadata": {
+              "chapter": 2,
+              "section": "2.7",
+              "section_title": "Công nghệ sử dụng",
+              "char_start": 1051,
+              "char_end": 1639,
+              "tokens": 187,
+              "strategy": "B",
+              "chapter_title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG"
+            },
+            "score": 0.855796,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p62:1525-2204 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 62]\nBảng 3.3.Đánh giá kết quả triển khai theo từng thành phần\nThành phần Kết quả đạt được Vấn đề còn tồn tại Định hướng cải thiện\nFrontend Dashboard\nHiển thị chỉ số traffic,\nbot traffic, IP đáng\nngờ\nBiểu đồ phụ thuộc\nchất lượng API\nBổ sung lọc nâng cao\nvà drill-down\nBackend Quản lý user, website,\nAPI, dữ liệu traffic\nCần chuẩn hóa response lỗi\nBổ sung logging và\nmiddleware giám sát\nTraffic API Nhận log và ghi dữ\nliệu gần realtime\nChưa có message\nqueue\nTích hợp queue hoặc\nbatch insert\nAI Service Dự đoán nhãn bot/real\nvà confidence\nPhụ thuộc dataset\nban đầu\nRetraining định kỳ\nDatabase Lưu log, session, feature và kết quả\nBảng log tăng nhanh Index, partition,\narchive dữ liệu cũ\n\n[B:doan-bot-traffic-2026:p33:0-733 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 33]\ntích dữ liệu traffic và chạy mô hình Machine Learning nên yêu cầu tài nguyên tính toán\ncao, đặc biệt khi xử lý realtime hoặc huấn luyện mô hình. Trong khi đó, Backend API\nchủ yếu xử lý request người dùng, quản lý session và lưu trữ dữ liệu traffic. Nếu sử dụng\nkiến trúc Monolithic, toàn bộ hệ thống phải scale cùng lúc, gây lãng phí tài nguyên và\nkhó tối ưu hiệu năng.\nThứ hai, sự đa dạng về công nghệ. Frontend sử dụng Next.js và Tailwind CSS để\nxây dựng dashboard trực quan; Backend sử dụng NestJS để quản lý API và session; AI\nService sử dụng Python cùng các thư viện Machine Learning như Scikit-learn, Pandas\nvà NumPy để xử lý dữ liệu và huấn luyện mô hình; API Service sử dụng Golang nhằm\ntăng hiệu năng xử lý request realtime.\n\n[B:doan-bot-traffic-2026:p56:1051-1639 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 56]\n2.7. Công nghệ sử dụng\nBảng 2.15.Công nghệ sử dụng trong hệ thống\nThành phần Công nghệ sử dụng\nFrontend Next.js 16.2.2, React 19.2.4, TypeScript 6.0.2, Ant Design\n6.3.5, Tailwind CSS 4, Recharts 3.8.1, ESLint 9\nBackend NestJS 11, TypeScript 5.7, TypeORM 0.3, MySQL2 driver,\nJWT, bcryptjs, Axios, Google Auth Library\nAI Service Python, Flask 3.1.1, Flask-CORS 5.0.1, scikit-learn 1.6.1\n(Random Forest), pandas 2.2.3, numpy 2.2.6\nGo API Go (net/http), JSON encoding, custom middleware (logging,\ntimeout, CORS)\nInfrastructure/\nDatabase\nDocker Compose, MySQL 8 (containerized, volume persist)\n\n[B:doan-bot-traffic-2026:p79:0-533 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 79]\n3.23. Đánh giá so sánh về chi phí triển khai và khả năng tùy chỉnh\nBên cạnh chất lượng phát hiện bot, yếu tố chi phí và khả năng tùy chỉnh cũng quan\ntrọng đối với doanh nghiệp vừa và nhỏ. Các nền tảng thương mại như Cloudflare Bot\nManagement hoặc Imperva Advanced Bot Protection có nhiều tính năng mạnh, nhưng\nchi phí và yêu cầu hạ tầng có thể vượt quá nhu cầu của một hệ thống demo hoặc một\nwebsite quy mô vừa. Hệ thống trong đồ án hướng đến khả năng tự triển khai, dễ điều\nchỉnh feature và phù hợp với mục tiêu học tập, nghiên cứu.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p62:1525-2204",
+          "B:doan-bot-traffic-2026:p33:0-733",
+          "B:doan-bot-traffic-2026:p56:1051-1639",
+          "B:doan-bot-traffic-2026:p79:0-533"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "chi phí vận hành triển khai hạ tầng hàng tháng bằng USD hệ thống đồ án VPS máy chủ cloud MySQL Docker Frontend Backend AI API tổng cộng USD/tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:doan-bot-traffic-2026:p60:1220-1969",
+            "text": "Bảng 3.1.Môi trường và tiêu chí triển khai thử nghiệm\nThành phần Công nghệ/phiênbản triển khai Vai trò kiểm thử Tiêu chí đánh giá\nFrontend Dashboard\nNextJS, Tailwind\nCSS\nHiển thị biểu đồ, danh\nsách log và cảnh báo\nGiao diện rõ ràng,\nthao tác ổn định, dữ\nliệu cập nhật đúng\nBackend Service\nNestJS/REST API Quản lý user, website,\nsession và kết nối AI\nService\nAPI phản hồi đúng,\nphân quyền hợp lệ\nTraffic Collection API\nGolang RESTful\nAPI\nNhận dữ liệu tracking\ntừ website\nGhi log nhanh, validate API key, không\nmất dữ liệu\nAI Service Python Flask,\nscikit-learn\nHuấn luyện và dự\nđoán bot traffic\nDự đoán đúng định\ndạng, confidence hợp\nlý\nDatabase MySQL qua\nDocker Compose\nLưu user, traffic, feature và kết quả dự\nđoán\nTruy vấn ổn định, dữ\nliệu toàn vẹn",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 60,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.1",
+              "section_title": "Môi trường triển khai và kịch bản thực nghiệm",
+              "char_start": 1220,
+              "char_end": 1969,
+              "tokens": 193,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.864031,
+            "rank": 1,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p62:1525-2204",
+            "text": "Bảng 3.3.Đánh giá kết quả triển khai theo từng thành phần\nThành phần Kết quả đạt được Vấn đề còn tồn tại Định hướng cải thiện\nFrontend Dashboard\nHiển thị chỉ số traffic,\nbot traffic, IP đáng\nngờ\nBiểu đồ phụ thuộc\nchất lượng API\nBổ sung lọc nâng cao\nvà drill-down\nBackend Quản lý user, website,\nAPI, dữ liệu traffic\nCần chuẩn hóa response lỗi\nBổ sung logging và\nmiddleware giám sát\nTraffic API Nhận log và ghi dữ\nliệu gần realtime\nChưa có message\nqueue\nTích hợp queue hoặc\nbatch insert\nAI Service Dự đoán nhãn bot/real\nvà confidence\nPhụ thuộc dataset\nban đầu\nRetraining định kỳ\nDatabase Lưu log, session, feature và kết quả\nBảng log tăng nhanh Index, partition,\narchive dữ liệu cũ",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 62,
+            "metadata": {
+              "chapter": 3,
+              "section": "3.3",
+              "section_title": "Kết quả triển khai các thành phần hệ thống",
+              "char_start": 1525,
+              "char_end": 2204,
+              "tokens": 165,
+              "strategy": "B",
+              "chapter_title": "THIẾT KẾ HỆ THỐNG"
+            },
+            "score": 0.861693,
+            "rank": 2,
+            "method": "dense-C"
+          },
+          {
+            "id": "B:doan-bot-traffic-2026:p33:0-733",
+            "text": "tích dữ liệu traffic và chạy mô hình Machine Learning nên yêu cầu tài nguyên tính toán\ncao, đặc biệt khi xử lý realtime hoặc huấn luyện mô hình. Trong khi đó, Backend API\nchủ yếu xử lý request người dùng, quản lý session và lưu trữ dữ liệu traffic. Nếu sử dụng\nkiến trúc Monolithic, toàn bộ hệ thống phải scale cùng lúc, gây lãng phí tài nguyên và\nkhó tối ưu hiệu năng.\nThứ hai, sự đa dạng về công nghệ. Frontend sử dụng Next.js và Tailwind CSS để\nxây dựng dashboard trực quan; Backend sử dụng NestJS để quản lý API và session; AI\nService sử dụng Python cùng các thư viện Machine Learning như Scikit-learn, Pandas\nvà NumPy để xử lý dữ liệu và huấn luyện mô hình; API Service sử dụng Golang nhằm\ntăng hiệu năng xử lý request realtime.",
+            "source_id": "doan-bot-traffic-2026",
+            "source": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+            "page": 33,
+            "metadata": {
+              "chapter": 1,
+              "section": "1.8.3",
+              "section_title": "Lý do áp dụng vào hệ thống phát hiện bot traffic",
+              "char_start": 0,
+              "char_end": 733,
+              "tokens": 186,
+              "strategy": "B",
+              "chapter_title": "CƠ SỞ LÝ THUYẾT"
+            },
+            "score": 0.860118,
+            "rank": 3,
+            "method": "dense-C"
+          }
+        ],
+        "context": "[B:doan-bot-traffic-2026:p60:1220-1969 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 60]\nBảng 3.1.Môi trường và tiêu chí triển khai thử nghiệm\nThành phần Công nghệ/phiênbản triển khai Vai trò kiểm thử Tiêu chí đánh giá\nFrontend Dashboard\nNextJS, Tailwind\nCSS\nHiển thị biểu đồ, danh\nsách log và cảnh báo\nGiao diện rõ ràng,\nthao tác ổn định, dữ\nliệu cập nhật đúng\nBackend Service\nNestJS/REST API Quản lý user, website,\nsession và kết nối AI\nService\nAPI phản hồi đúng,\nphân quyền hợp lệ\nTraffic Collection API\nGolang RESTful\nAPI\nNhận dữ liệu tracking\ntừ website\nGhi log nhanh, validate API key, không\nmất dữ liệu\nAI Service Python Flask,\nscikit-learn\nHuấn luyện và dự\nđoán bot traffic\nDự đoán đúng định\ndạng, confidence hợp\nlý\nDatabase MySQL qua\nDocker Compose\nLưu user, traffic, feature và kết quả dự\nđoán\nTruy vấn ổn định, dữ\nliệu toàn vẹn\n\n[B:doan-bot-traffic-2026:p62:1525-2204 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 62]\nBảng 3.3.Đánh giá kết quả triển khai theo từng thành phần\nThành phần Kết quả đạt được Vấn đề còn tồn tại Định hướng cải thiện\nFrontend Dashboard\nHiển thị chỉ số traffic,\nbot traffic, IP đáng\nngờ\nBiểu đồ phụ thuộc\nchất lượng API\nBổ sung lọc nâng cao\nvà drill-down\nBackend Quản lý user, website,\nAPI, dữ liệu traffic\nCần chuẩn hóa response lỗi\nBổ sung logging và\nmiddleware giám sát\nTraffic API Nhận log và ghi dữ\nliệu gần realtime\nChưa có message\nqueue\nTích hợp queue hoặc\nbatch insert\nAI Service Dự đoán nhãn bot/real\nvà confidence\nPhụ thuộc dataset\nban đầu\nRetraining định kỳ\nDatabase Lưu log, session, feature và kết quả\nBảng log tăng nhanh Index, partition,\narchive dữ liệu cũ\n\n[B:doan-bot-traffic-2026:p33:0-733 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 33]\ntích dữ liệu traffic và chạy mô hình Machine Learning nên yêu cầu tài nguyên tính toán\ncao, đặc biệt khi xử lý realtime hoặc huấn luyện mô hình. Trong khi đó, Backend API\nchủ yếu xử lý request người dùng, quản lý session và lưu trữ dữ liệu traffic. Nếu sử dụng\nkiến trúc Monolithic, toàn bộ hệ thống phải scale cùng lúc, gây lãng phí tài nguyên và\nkhó tối ưu hiệu năng.\nThứ hai, sự đa dạng về công nghệ. Frontend sử dụng Next.js và Tailwind CSS để\nxây dựng dashboard trực quan; Backend sử dụng NestJS để quản lý API và session; AI\nService sử dụng Python cùng các thư viện Machine Learning như Scikit-learn, Pandas\nvà NumPy để xử lý dữ liệu và huấn luyện mô hình; API Service sử dụng Golang nhằm\ntăng hiệu năng xử lý request realtime.",
+        "context_ids": [
+          "B:doan-bot-traffic-2026:p60:1220-1969",
+          "B:doan-bot-traffic-2026:p62:1525-2204",
+          "B:doan-bot-traffic-2026:p33:0-733"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "llm_calls": [
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01itXemT1Xk1zLG4Pq82GjXbeb",
+        "stop_reason": "tool_use",
+        "searches_left": 4,
+        "latency_ms": 4095.1,
+        "input_chars": 1422,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 48,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 48,
+              "output_tokens": 36,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 36,
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00072,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "chi phí hạ tầng hằng tháng USD vận hành hệ thống đồ án tổng chi phí hàng tháng"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_014xGwS2FYzp3XfttVDj78BkXj",
+        "stop_reason": "tool_use",
+        "searches_left": 3,
+        "latency_ms": 5546.1,
+        "input_chars": 3465,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 658,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 658,
+              "output_tokens": 90,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 90,
+          "output_tokens_details": {
+            "thinking_tokens": 45
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.0018,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "Bảng chi phí hạ tầng hàng tháng vận hành hệ thống USD máy chủ VPS cloud database frontend backend AI service tổng cộng mỗi tháng"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01T8NxuXbMg94aKP18sPBHwnsd",
+        "stop_reason": "tool_use",
+        "searches_left": 2,
+        "latency_ms": 4688.6,
+        "input_chars": 4538,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 994,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 994,
+              "output_tokens": 76,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 76,
+          "output_tokens_details": {
+            "thinking_tokens": 24
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00152,
+        "text": "",
+        "tool_calls": [
+          {
+            "name": "search",
+            "input": {
+              "query": "chi phí vận hành triển khai hạ tầng hàng tháng bằng USD hệ thống đồ án VPS máy chủ cloud MySQL Docker Frontend Backend AI API tổng cộng USD/tháng"
+            }
+          }
+        ]
+      },
+      {
+        "model": "claude-opus-5-5",
+        "request_id": "req_01ok33QeH1NtgKCs4UZNzvdhTc",
+        "stop_reason": "end_turn",
+        "searches_left": 1,
+        "latency_ms": 4251.8,
+        "input_chars": 4219,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 873,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 873,
+              "output_tokens": 32,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 32,
+          "output_tokens_details": {
+            "thinking_tokens": 18
+          },
+          "service_tier": "standard"
+        },
+        "output_cost_usd_est": 0.00064,
+        "text": "Không đủ bằng chứng để trả lời.",
+        "tool_calls": []
+      }
+    ],
+    "retrieval_calls": [
+      {
+        "query": "chi phí hạ tầng hằng tháng USD vận hành hệ thống đồ án tổng chi phí hàng tháng",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 58.7
+      },
+      {
+        "query": "Bảng chi phí hạ tầng hàng tháng vận hành hệ thống USD máy chủ VPS cloud database frontend backend AI service tổng cộng mỗi tháng",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 46.4
+      },
+      {
+        "query": "chi phí vận hành triển khai hạ tầng hàng tháng bằng USD hệ thống đồ án VPS máy chủ cloud MySQL Docker Frontend Backend AI API tổng cộng USD/tháng",
+        "applied_filter": null,
+        "n": 3,
+        "latency_ms": 49.9
+      }
+    ],
+    "n_llm_calls": 4,
+    "n_searches": 3,
+    "final_context_ids": [
+      "B:doan-bot-traffic-2026:p60:1220-1969",
+      "B:doan-bot-traffic-2026:p62:1525-2204",
+      "B:doan-bot-traffic-2026:p33:0-733"
+    ],
+    "final_context": "[B:doan-bot-traffic-2026:p60:1220-1969 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 60]\nBảng 3.1.Môi trường và tiêu chí triển khai thử nghiệm\nThành phần Công nghệ/phiênbản triển khai Vai trò kiểm thử Tiêu chí đánh giá\nFrontend Dashboard\nNextJS, Tailwind\nCSS\nHiển thị biểu đồ, danh\nsách log và cảnh báo\nGiao diện rõ ràng,\nthao tác ổn định, dữ\nliệu cập nhật đúng\nBackend Service\nNestJS/REST API Quản lý user, website,\nsession và kết nối AI\nService\nAPI phản hồi đúng,\nphân quyền hợp lệ\nTraffic Collection API\nGolang RESTful\nAPI\nNhận dữ liệu tracking\ntừ website\nGhi log nhanh, validate API key, không\nmất dữ liệu\nAI Service Python Flask,\nscikit-learn\nHuấn luyện và dự\nđoán bot traffic\nDự đoán đúng định\ndạng, confidence hợp\nlý\nDatabase MySQL qua\nDocker Compose\nLưu user, traffic, feature và kết quả dự\nđoán\nTruy vấn ổn định, dữ\nliệu toàn vẹn\n\n[B:doan-bot-traffic-2026:p62:1525-2204 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 62]\nBảng 3.3.Đánh giá kết quả triển khai theo từng thành phần\nThành phần Kết quả đạt được Vấn đề còn tồn tại Định hướng cải thiện\nFrontend Dashboard\nHiển thị chỉ số traffic,\nbot traffic, IP đáng\nngờ\nBiểu đồ phụ thuộc\nchất lượng API\nBổ sung lọc nâng cao\nvà drill-down\nBackend Quản lý user, website,\nAPI, dữ liệu traffic\nCần chuẩn hóa response lỗi\nBổ sung logging và\nmiddleware giám sát\nTraffic API Nhận log và ghi dữ\nliệu gần realtime\nChưa có message\nqueue\nTích hợp queue hoặc\nbatch insert\nAI Service Dự đoán nhãn bot/real\nvà confidence\nPhụ thuộc dataset\nban đầu\nRetraining định kỳ\nDatabase Lưu log, session, feature và kết quả\nBảng log tăng nhanh Index, partition,\narchive dữ liệu cũ\n\n[B:doan-bot-traffic-2026:p33:0-733 | starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf | page 33]\ntích dữ liệu traffic và chạy mô hình Machine Learning nên yêu cầu tài nguyên tính toán\ncao, đặc biệt khi xử lý realtime hoặc huấn luyện mô hình. Trong khi đó, Backend API\nchủ yếu xử lý request người dùng, quản lý session và lưu trữ dữ liệu traffic. Nếu sử dụng\nkiến trúc Monolithic, toàn bộ hệ thống phải scale cùng lúc, gây lãng phí tài nguyên và\nkhó tối ưu hiệu năng.\nThứ hai, sự đa dạng về công nghệ. Frontend sử dụng Next.js và Tailwind CSS để\nxây dựng dashboard trực quan; Backend sử dụng NestJS để quản lý API và session; AI\nService sử dụng Python cùng các thư viện Machine Learning như Scikit-learn, Pandas\nvà NumPy để xử lý dữ liệu và huấn luyện mô hình; API Service sử dụng Golang nhằm\ntăng hiệu năng xử lý request realtime.",
+    "latency_ms": 18737.2,
+    "input_chars": 13644,
+    "output_tokens": 234,
+    "output_cost_usd_est": 0.00468,
+    "error": null
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích (tr. 15, Imperva 49,6%) chứa nguyên văn evidence.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích (tr. 15, Cloudflare 2024 hơn 30%) chứa nguyên văn evidence.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Liệt kê đủ 4 chỉ số (số trang, session duration, chuỗi điều hướng, bounce rate); đoạn tr. 30 chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Nêu đủ CIC-IDS2017, Bot-IoT, Web Server Log Dataset; đoạn tr. 30 (chương 1, đúng filter) chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu hỏi hỏi nguồn dữ liệu; đáp án chuẩn là log request mẫu, dataset.csv, synthetic_data.csv (tr. 60). Câu trả lời chỉ mô tả dữ liệu mô phỏng chia hai nhóm real/bot (mục 3.18, tr. 74), không nêu nguồn nào. Citation hỗ trợ đúng câu đã viết nhưng câu đó không trả lời câu hỏi. Cân nhắc 1 nếu coi 'mô phỏng' là trúng một phần (dữ liệu mô phỏng).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ session, request log, thông tin người dùng, kết quả phân loại; đoạn tr. 31 (chương 1) chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 5 nhóm (user data, traffic logs, detection results, system configuration, audit logs, được dịch sang tiếng Việt); đoạn tr. 49 chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 3 nhãn real user, good bot, malicious bot; đoạn tr. 35 (chương 2) chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true
+    ],
+    "reason": "POST /v1/collect; đoạn tr. 47 chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng điều kiện (xác suất bot vượt ngưỡng) và nơi lưu (bot_detection_results, dashboard); phần thêm về đặc trưng cũng có trong đoạn tr. 53.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng lý do (dữ liệu thô cho truy vết, huấn luyện lại; kết quả dự đoán cho cảnh báo, báo cáo); ý thêm 'dễ kiểm tra, dễ mở rộng' có trong đoạn tr. 55.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true
+    ],
+    "reason": "Access token (JWT) được cấp sau khi đăng nhập; đoạn tr. 57 nêu cả JWT và access token.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q17",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q18",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng: cảnh báo để người phát triển kiểm tra trước khi huấn luyện lại; đoạn tr. 71 chứa nguyên văn.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q25",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q26",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  }
+]

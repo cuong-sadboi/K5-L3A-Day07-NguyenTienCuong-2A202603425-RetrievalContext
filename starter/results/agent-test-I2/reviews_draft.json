@@ -1,0 +1,76 @@
+[
+  {
+    "query_id": "q19",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng: ưu tiên bot độc hại; đoạn tr. 23 nêu 'Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic' và phân loại Good Bot / Bad Bot (ý phụ 'vẫn phân loại được' là diễn giải phân loại này).",
+    "answer_grade": 2,
+    "context_score": 2,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q20",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; đoạn tr. 64 có cả câu không chặn ngay, đưa vào danh sách nghi ngờ và câu hiển thị confidence, feature nổi bật.",
+    "answer_grade": 2,
+    "context_score": 2,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q21",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng: Accuracy 93,85%; đoạn tr. 75 chứa evidence gold (1.877/2.000 mẫu).",
+    "answer_grade": 2,
+    "context_score": 2,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q22",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; đoạn được trích chứa evidence gold. Context: có evidence và nguồn.",
+    "answer_grade": 2,
+    "context_score": 2,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q23",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; đoạn tr. 77 có cả ý rule-based chỉ hiệu quả với trường hợp rõ ràng và ý Random Forest kết hợp nhiều dấu hiệu yếu.",
+    "answer_grade": 2,
+    "context_score": 2,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q24",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng nội dung (chưa đủ lớn về quy mô, chưa phản ánh đủ các kiểu bot về độ đa dạng), đoạn tr. 66 hỗ trợ. Đoạn kết luận tr. 85 nêu 'hạn chế đầu tiên' không có trong context, nên context chấm 1; chấm câu trả lời 1 nếu yêu cầu evidence nêu rõ đây là hạn chế đầu tiên.",
+    "answer_grade": 2,
+    "context_score": 1,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q27",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  },
+  {
+    "query_id": "q28",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "draft": "Nháp của Claude (AI), chờ học viên đọc phiếu và xác nhận hoặc sửa"
+  }
+]

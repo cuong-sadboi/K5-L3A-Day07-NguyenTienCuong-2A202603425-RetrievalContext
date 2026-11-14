@@ -1,0 +1,353 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Theo báo cáo Bad Bot Report 2024 của Imperva, bot traffic chiếm khoảng bao nhiêu phần trăm tổng lưu lượng Internet toàn cầu?",
+    "expected_answer": "Khoảng 49,6%.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 15,
+        "evidence": "bot traffic\nhiện chiếm khoảng 49,6% tổng lưu lượng Internet toàn cầu"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Theo số liệu Cloudflare năm 2024 được trích dẫn, bao nhiêu phần bot độc hại có thể giả làm trình duyệt và hành vi người dùng?",
+    "expected_answer": "Hơn 30% bot traffic độc hại.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 15,
+        "evidence": "Theo thống kê của Cloudflare năm 2024, hơn 30% bot\ntraffic độc hại có khả năng giả lập trình duyệt và hành vi người dùng"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Giải pháp Cloudflare Bot Management nhận diện bot dựa vào những yếu tố nào?",
+    "expected_answer": "Fingerprint, IP reputation và AI.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 18,
+        "evidence": "Hệ thống có khả năng phát hiện bot dựa trên fingerprint, IP\nreputation và AI."
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Thế hệ hệ thống phát hiện bot giai đoạn 2010–2016 dựa trên hướng tiếp cận nào?",
+    "expected_answer": "Phân tích hành vi và thống kê.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 24,
+        "evidence": "Thế hệ thứ hai (2010–2016) – Phân tích hành vi và thống kê"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Ở bước tiền xử lý của quy trình phát hiện bot bằng Machine Learning, những dữ liệu nào bị loại bỏ?",
+    "expected_answer": "Request lỗi, dữ liệu trùng lặp hoặc dữ liệu không hợp lệ.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 27,
+        "evidence": "dữ liệu traffic được làm sạch\nnhằm loại bỏ request lỗi, dữ liệu trùng lặp hoặc dữ liệu không hợp lệ"
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Nhóm đặc trưng mô tả cách người dùng duyệt website gồm những chỉ số nào?",
+    "expected_answer": "Số trang truy cập, thời gian ở lại website (session duration), chuỗi điều hướng giữa các trang và tỷ lệ thoát trang (bounce rate).",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 30,
+        "evidence": "Đặc trưng về hành vi người dùng: số lượng trang truy cập, thời gian ở lại website\n(session duration), chuỗi điều hướng giữa các trang và tỷ lệ thoát trang (bounce\nrate)."
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Trong chương 1, những bộ dữ liệu công khai nào được nêu để tham khảo và kiểm thử mô hình phát hiện bot?",
+    "expected_answer": "CIC-IDS2017, Bot-IoT hoặc Web Server Log Dataset.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 30,
+        "evidence": "một số bộ dữ liệu nghiên cứu về bot detection như CIC-IDS2017,\nBot-IoT hoặc Web Server Log Dataset"
+      }
+    ],
+    "filter": {
+      "chapter": 1
+    }
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Trong chương 3, dữ liệu thực nghiệm được lấy từ những nguồn nào?",
+    "expected_answer": "Dữ liệu log thu thập từ request mẫu, dữ liệu đã tiền xử lý trong dataset.csv và dữ liệu mô phỏng trong synthetic_data.csv.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 60,
+        "evidence": "Dữ liệu thực nghiệm gồm dữ liệu log thu thập từ request mẫu, dữ liệu đã tiền xử\nlý trong dataset.csv và dữ liệu mô phỏng trong synthetic_data.csv."
+      }
+    ],
+    "filter": {
+      "chapter": 3
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Theo chương 1, MySQL được dùng để lưu những loại dữ liệu nào của hệ thống?",
+    "expected_answer": "Dữ liệu traffic có cấu trúc như session, request log, thông tin người dùng và kết quả phân loại traffic.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 31,
+        "evidence": "MySQL được sử dụng để lưu trữ dữ liệu traffic có cấu trúc như session, request\nlog, thông tin người dùng và kết quả phân loại traffic."
+      }
+    ],
+    "filter": {
+      "chapter": 1
+    }
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Trong chương 2, MySQL Database Service lưu những nhóm dữ liệu nào?",
+    "expected_answer": "User data, traffic logs, detection results, system configuration và audit logs.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 49,
+        "evidence": "User data (admin, analyst, system user)\n- Traffic logs (request history)\n- Detection results (bot_score, label)\n- System configuration (rules, thresholds)\n- Audit logs"
+      }
+    ],
+    "filter": {
+      "chapter": 2
+    }
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Trong chương 2, kết quả phân loại traffic đầu ra của hệ thống gồm những nhãn nào?",
+    "expected_answer": "Người dùng thật (real user), bot hợp lệ (good bot) hoặc bot bất thường (malicious bot).",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 35,
+        "evidence": "Kết quả phân loại traffic gồm người dùng thật (real user), bot hợp lệ (good bot)\nhoặc bot bất thường (malicious bot)"
+      }
+    ],
+    "filter": {
+      "chapter": 2
+    }
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Endpoint nào của Traffic Collection API dùng để thu thập dữ liệu request?",
+    "expected_answer": "POST /v1/collect.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 47,
+        "evidence": "POST /v1/collect– Thu thập request data"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Trong luồng phân tích, khi nào hệ thống ghi nhận một cảnh báo bot và lưu ở đâu?",
+    "expected_answer": "Khi xác suất bot vượt ngưỡng cấu hình; cảnh báo được ghi vào bảng bot_detection_results và hiển thị trên dashboard.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 53,
+        "evidence": "Nếu xác suất bot vượt ngưỡng cấu hình, hệ thống ghi nhận cảnh báo vào bảng\nbot_detection_results và hiển thị trên dashboard."
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Trường ip_address được thiết kế với kiểu dữ liệu nào và nhằm hỗ trợ điều gì?",
+    "expected_answer": "VARCHAR(45), để hỗ trợ cả IPv4 và IPv6.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 54,
+        "evidence": "ip_address Địa chỉ IP truy cập VARCHAR(45) Hỗ trợ IPv4/IPv6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Vì sao pipeline Machine Learning lưu dữ liệu thô tách biệt với kết quả dự đoán?",
+    "expected_answer": "Dữ liệu thô phục vụ truy vết và huấn luyện lại, còn kết quả dự đoán phục vụ cảnh báo và báo cáo.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 55,
+        "evidence": "Dữ liệu thô phục vụ truy vết và huấn luyện lại, còn kết quả dự đoán phục\nvụ cảnh báo và báo cáo."
+      },
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 54,
+        "evidence": "không ghi đè log gốc mà được lưu riêng nhằm bảo toàn\ndữ liệu thô cho quá trình huấn luyện lại sau này"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "Sau khi đăng nhập, người dùng dùng gì để gọi các API cần bảo vệ?",
+    "expected_answer": "Access token được cấp sau khi đăng nhập.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 57,
+        "evidence": "Sau khi đăng nhập, người dùng nhận access token để gọi các API"
+      },
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 49,
+        "evidence": "JWT (access token + refresh token)"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "Theo chương 1, nếu AI Service tạm thời gặp lỗi thì hệ thống theo kiến trúc Microservice vẫn hoạt động ra sao?",
+    "expected_answer": "Vẫn tiếp tục thu thập log và lưu dữ liệu thô để phân tích lại sau; các thành phần còn lại không bị dừng toàn bộ.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 32,
+        "evidence": "nếu AI Service\ntạm thời gặp lỗi, hệ thống vẫn có thể tiếp tục thu thập log và lưu dữ liệu thô để phân\ntích lại sau; các thành phần còn lại không bị dừng toàn bộ"
+      }
+    ],
+    "filter": {
+      "chapter": 1
+    }
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "question": "Khi kiểm tra tự động phát hiện dữ liệu bị lệch mạnh, hệ thống cần làm gì trước khi huấn luyện lại mô hình?",
+    "expected_answer": "Cảnh báo để người phát triển kiểm tra trước khi dùng dữ liệu đó huấn luyện lại mô hình.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 71,
+        "evidence": "Khi phát hiện dữ liệu lệch mạnh, hệ thống cần cảnh báo\nđể người phát triển kiểm tra trước khi dùng dữ liệu đó huấn luyện lại mô hình."
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại?",
+    "expected_answer": "Bot độc hại (bad bot traffic).",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 23,
+        "evidence": "Đề tài tập trung chủ yếu vào việc phát\nhiện bad bot traffic."
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Khi người dùng thật bị nghi là bot vì có hành vi bất thường nhưng hợp lệ, hệ thống nên xử lý thế nào?",
+    "expected_answer": "Không tự động chặn ngay mà đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 64,
+        "evidence": "hệ thống không nên tự động chặn\nngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "split": "test",
+    "question": "Trong chương 3, mô hình Random Forest đạt Accuracy bao nhiêu trên tập kiểm thử?",
+    "expected_answer": "Khoảng 93,85% (dự đoán đúng 1.877/2.000 mẫu).",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 75,
+        "evidence": "mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%"
+      },
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 77,
+        "evidence": "Random Forest 93,85% 88,94% / 91,90%"
+      }
+    ],
+    "filter": {
+      "chapter": 3
+    }
+  },
+  {
+    "id": "q22",
+    "split": "test",
+    "question": "Trong chương 2, yêu cầu phi chức năng về hiệu năng quy định thời gian phản hồi API tối đa là bao lâu?",
+    "expected_answer": "Không quá 2 giây đối với các request thông thường.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 38,
+        "evidence": "Thời gian phản hồi API≤2 giây đối với các request thông thường."
+      }
+    ],
+    "filter": {
+      "chapter": 2
+    }
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "So với cách phát hiện dựa trên luật, Random Forest xử lý thế nào một session có tần suất request không quá cao nhưng có các dấu hiệu khác đáng ngờ?",
+    "expected_answer": "Kết hợp nhiều dấu hiệu yếu (interval đều, unique_pages thấp, error_rate cao) thành quyết định tổng thể nên vẫn có thể đánh dấu session đó là nghi ngờ.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 77,
+        "evidence": "Random Forest\ncó thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có\nRPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị\nđánh dấu nghi ngờ."
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "Điểm yếu đầu tiên mà đồ án tự nhận về dữ liệu thực nghiệm là gì?",
+    "expected_answer": "Dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.",
+    "gold": [
+      {
+        "source_id": "doan-bot-traffic-2026",
+        "page": 85,
+        "evidence": "Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa\ndạng."
+      }
+    ]
+  }
+]

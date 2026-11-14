@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-11-14T14:49:09+0700",
+  "day6_root": "C:\\Users\\Admin\\Desktop\\K5-L3A-DAY06-NguyenTienCuong-2A202603425-DataIngestion",
+  "connection": "DATABASE_URL đọc từ <DAY6_ROOT>/starter/.env qua code Day 6 (không chép vào Day 7)",
+  "vector_store": {
+    "backend": "PostgreSQL + pgvector",
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "table": "chunks",
+    "search": "exact, cosine distance <=>, score = 1 - distance"
+  },
+  "embedding": {
+    "provider": "Sentence Transformers, chạy local (CPU)",
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "dimensions": 768,
+    "max_seq_length": 512,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "normalized": true,
+    "cost_usd": 0,
+    "versions": {
+      "sentence-transformers": "6.3.0",
+      "transformers": "5.22.2",
+      "torch": "2.15.0+cpu"
+    }
+  },
+  "indexes": {
+    "A": {
+      "params": {
+        "chunker": "fixed_size",
+        "size": 500,
+        "overlap": 50
+      },
+      "rows": 337,
+      "fingerprint": "cf190f12358e920a5286036e984ad1a3fa7ef8b58057238920a7891b96396fad"
+    },
+    "B": {
+      "params": {
+        "chunker": "by_paragraph",
+        "max_size": 800,
+        "min_segment": 120
+      },
+      "rows": 254,
+      "fingerprint": "e3fbf31b497c5daed4765842bc07b3d0743f879c1ce822e8d1889317f4cf7163"
+    }
+  },
+  "strategies": {
+    "A": {
+      "index": "A",
+      "use_filter": false
+    },
+    "B": {
+      "index": "B",
+      "use_filter": false
+    },
+    "C": {
+      "index": "B",
+      "use_filter": true
+    }
+  },
+  "compatibility": {
+    "index": "B",
+    "models_in_index": [
+      "intfloat/multilingual-e5-base"
+    ],
+    "same_model": true,
+    "re_embedded_samples": [
+      {
+        "chunk_id": "B:doan-bot-traffic-2026:p11:0-493",
+        "cosine_with_stored": 1.0
+      },
+      {
+        "chunk_id": "B:doan-bot-traffic-2026:p47:775-1333",
+        "cosine_with_stored": 1.0
+      },
+      {
+        "chunk_id": "B:doan-bot-traffic-2026:p86:745-991",
+        "cosine_with_stored": 1.0
+      }
+    ],
+    "min_cosine": 1.0
+  },
+  "export": {
+    "index": "B",
+    "rows": 254,
+    "path": "starter/data/day6/chunks_B.json"
+  }
+}

@@ -1,0 +1,58 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  10%|#         | 20/199 [00:00<00:00, 197.00it/s]Loading weights:  22%|##1       | 43/199 [00:00<00:00, 210.28it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 759.67it/s]
+retrieval (câu hỏi gốc): {"N": 6, "hit1": 4, "hit3": 4, "mrr": 0.6667, "context_hit_single_search": 4, "top_k": 3, "budget_chars": 3000}
+q19: answered | search 1 | 9.7s
+q20: answered | search 1 | 11.5s
+q21: answered | search 1 | 8.8s
+q22: answered | search 1 | 13.6s
+q23: answered | search 1 | 10.0s
+q24: answered | search 1 | 8.9s
+q27: abstain | search 3 | 223.0s
+q28: abstain | search 3 | 18.7s
+{
+  "settings": {
+    "name": "I2",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "fallbacks": true,
+    "retriever": "dense-C",
+    "top_k": 3,
+    "budget": 3000,
+    "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+    "max_searches": 4,
+    "order": "latest-first"
+  },
+  "split": "test",
+  "cases": 8,
+  "errors": [],
+  "status": {
+    "answered": 6,
+    "abstain": 2
+  },
+  "tool_use": {
+    "n": 8,
+    "N": 8
+  },
+  "searches_per_case": {
+    "1": 6,
+    "3": 2
+  },
+  "llm_calls": 20,
+  "context_evidence": {
+    "n": 5,
+    "N": 6
+  },
+  "answerable_status": {
+    "answered": 6
+  },
+  "unanswerable_status": {
+    "abstain": 2
+  },
+  "latency_ms": {
+    "median": 10762.15,
+    "max": 223037.1
+  },
+  "input_chars": 57016,
+  "output_tokens_reported": 1172,
+  "output_cost_usd_est": 0.0234
+}

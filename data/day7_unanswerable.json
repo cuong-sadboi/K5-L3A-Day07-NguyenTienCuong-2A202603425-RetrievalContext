@@ -1,0 +1,34 @@
+[
+  {
+    "id": "q25",
+    "split": "dev",
+    "question": "Theo đồ án, bot traffic chiếm khoảng bao nhiêu phần trăm lưu lượng truy cập của các website tại Việt Nam?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Mục 1.1.3 (tr. 17) chỉ nêu số liệu Việt Nam về người dùng Internet (hơn 78 triệu, trên 79% dân số, DataReportal 2024) và nhận định doanh nghiệp Việt Nam còn thiếu giải pháp phát hiện bot; tỷ lệ bot traffic chỉ có ở mức toàn cầu (gần 50% ở tr. 17; 49,6% theo Imperva ở tr. 15). Cách kiểm tra: đọc toàn văn mục 1.1.3 và tìm mọi câu chứa 'Việt Nam' kèm '%' hoặc 'bot' trên 254 chunk index B: không có tỷ lệ bot traffic riêng cho Việt Nam."
+  },
+  {
+    "id": "q26",
+    "split": "dev",
+    "question": "Đồ án nêu hệ thống phải tuân thủ văn bản pháp lý nào về bảo vệ dữ liệu cá nhân (ví dụ GDPR hoặc Nghị định 13/2023/NĐ-CP) khi lưu IP và user-agent của người truy cập?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Mục 3.11 (tr. 68–69) chỉ nêu biện pháp kỹ thuật (API key, phân quyền, RBAC, đặt AI Service trong mạng nội bộ, sao lưu định kỳ) và khuyến nghị chỉ dùng IP cho mục tiêu an ninh và phân tích traffic; không nêu văn bản pháp lý nào. Cách kiểm tra: đọc toàn văn mục 3.11 và tìm trên 254 chunk index B các từ 'GDPR', 'nghị định', '13/2023', 'dữ liệu cá nhân', 'pháp lý', 'tuân thủ', 'quyền riêng tư', 'privacy', 'consent', 'cookie': 0 kết quả; mọi lần xuất hiện 'luật' (18 chunk) đều mang nghĩa luật phát hiện (rule-based) hoặc luật phân tách của Decision Tree."
+  },
+  {
+    "id": "q27",
+    "split": "test",
+    "question": "Trong phần thực nghiệm so sánh mô hình, mô hình LSTM đạt F1-score bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "LSTM (cùng RNN, CNN, Transformer) chỉ được nhắc ở mục 1.3.3 (tr. 22) khi giới thiệu lý thuyết học sâu. Mục 3.20 (tr. 76–77) chỉ so sánh Random Forest với Logistic Regression, Decision Tree và Isolation Forest. Cách kiểm tra: tìm 'lstm', 'rnn', 'cnn', 'transformer', 'neural', 'mlp' trên 254 chunk index B: chỉ xuất hiện ở tr. 22, không có kết quả thực nghiệm của mô hình học sâu nào."
+  },
+  {
+    "id": "q28",
+    "split": "test",
+    "question": "Chi phí hạ tầng hằng tháng (tính bằng USD) để vận hành hệ thống trong đồ án là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Mục 3.23 (tr. 79) chỉ so sánh chi phí định tính (Bảng 3.23: hệ thống đề tài 'Thấp trong phạm vi demo', Cloudflare/Imperva 'Cao hơn, tùy gói dịch vụ'), không có con số. Các số liệu tiền tệ trong corpus chỉ là thiệt hại do ad fraud và bot trên toàn cầu (tr. 16, 26). Cách kiểm tra: đọc toàn văn mục 3.23 và tìm trên 254 chunk index B mọi con số kèm đơn vị tiền tệ (usd, đô, đồng, vnđ, triệu, nghìn, tỷ, $) cùng các từ 'máy chủ', 'vps', 'hosting', 'aws', 'azure', 'gcp', 'thuê': không có chi phí vận hành hệ thống."
+  }
+]

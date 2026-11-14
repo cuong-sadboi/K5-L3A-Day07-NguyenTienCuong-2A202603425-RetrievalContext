@@ -1,0 +1,148 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q17",
+    "citation_support": [],
+    "reason": "Từ chối câu có đáp án (BENCHMARK.md:36).",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q18",
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q25",
+    "citation_support": [],
+    "reason": "",
+    "abstention_correct": null
+  },
+  {
+    "query_id": "q26",
+    "citation_support": [],
+    "reason": "",
+    "abstention_correct": null
+  }
+]

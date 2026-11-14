@@ -1,0 +1,203 @@
+{
+  "summary": {
+    "N": 6,
+    "hit1": 4,
+    "hit3": 4,
+    "mrr": 0.6667,
+    "context_hit_single_search": 4,
+    "top_k": 3,
+    "budget_chars": 3000
+  },
+  "rows": [
+    {
+      "query_id": "q19",
+      "filter": null,
+      "first_hit_rank": null,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p79:534-1329",
+        "B:doan-bot-traffic-2026:p85:879-1650",
+        "B:doan-bot-traffic-2026:p23:2007-2641"
+      ],
+      "context_hit": false,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p79:534-1329",
+          "page": 79,
+          "score": 0.865861,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p85:879-1650",
+          "page": 85,
+          "score": 0.864145,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p23:2007-2641",
+          "page": 23,
+          "score": 0.860026,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "query_id": "q20",
+      "filter": null,
+      "first_hit_rank": 1,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p64:0-662",
+        "B:doan-bot-traffic-2026:p15:1186-1860",
+        "B:doan-bot-traffic-2026:p27:0-718"
+      ],
+      "context_hit": true,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p64:0-662",
+          "page": 64,
+          "score": 0.865736,
+          "hit": true
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p15:1186-1860",
+          "page": 15,
+          "score": 0.857992,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p27:0-718",
+          "page": 27,
+          "score": 0.857826,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "query_id": "q21",
+      "filter": {
+        "chapter": 3
+      },
+      "first_hit_rank": 1,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p75:1103-1885",
+        "B:doan-bot-traffic-2026:p76:0-642",
+        "B:doan-bot-traffic-2026:p75:0-678"
+      ],
+      "context_hit": true,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p75:1103-1885",
+          "page": 75,
+          "score": 0.889002,
+          "hit": true
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p76:0-642",
+          "page": 76,
+          "score": 0.880058,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p75:0-678",
+          "page": 75,
+          "score": 0.869689,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "query_id": "q22",
+      "filter": {
+        "chapter": 2
+      },
+      "first_hit_rank": 1,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p38:0-535",
+        "B:doan-bot-traffic-2026:p53:0-328",
+        "B:doan-bot-traffic-2026:p52:0-798"
+      ],
+      "context_hit": true,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p38:0-535",
+          "page": 38,
+          "score": 0.857364,
+          "hit": true
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p53:0-328",
+          "page": 53,
+          "score": 0.820753,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p52:0-798",
+          "page": 52,
+          "score": 0.818904,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "query_id": "q23",
+      "filter": null,
+      "first_hit_rank": 1,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p77:0-538",
+        "B:doan-bot-traffic-2026:p77:960-1649",
+        "B:doan-bot-traffic-2026:p63:0-783"
+      ],
+      "context_hit": true,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p77:0-538",
+          "page": 77,
+          "score": 0.884168,
+          "hit": true
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p77:960-1649",
+          "page": 77,
+          "score": 0.869051,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p63:0-783",
+          "page": 63,
+          "score": 0.862849,
+          "hit": false
+        }
+      ]
+    },
+    {
+      "query_id": "q24",
+      "filter": null,
+      "first_hit_rank": null,
+      "context_ids": [
+        "B:doan-bot-traffic-2026:p66:1236-1583",
+        "B:doan-bot-traffic-2026:p66:1584-2091",
+        "B:doan-bot-traffic-2026:p73:1041-1834"
+      ],
+      "context_hit": false,
+      "results": [
+        {
+          "id": "B:doan-bot-traffic-2026:p66:1236-1583",
+          "page": 66,
+          "score": 0.830129,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p66:1584-2091",
+          "page": 66,
+          "score": 0.829298,
+          "hit": false
+        },
+        {
+          "id": "B:doan-bot-traffic-2026:p73:1041-1834",
+          "page": 73,
+          "score": 0.826712,
+          "hit": false
+        }
+      ]
+    }
+  ]
+}

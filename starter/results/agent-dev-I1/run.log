@@ -1,0 +1,72 @@
+HTTP Error 429 thrown while requesting HEAD https://huggingface.co/intfloat/multilingual-e5-base/resolve/d128750597153bb5987e10b1c3493a34e5a4502a/./config_sentence_transformers.json
+Rate limited. Waiting 88.0s before retry [Retry 1/5].
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  16%|#6        | 32/199 [00:00<00:00, 314.33it/s]Loading weights:  32%|###2      | 64/199 [00:00<00:00, 301.38it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 693.93it/s]
+retrieval (câu hỏi gốc): {"N": 18, "hit1": 11, "hit3": 17, "mrr": 0.7593, "context_hit_single_search": 17, "top_k": 3, "budget_chars": 3000}
+q01: answered | search 1 | 16.6s
+q02: answered | search 1 | 10.2s
+q03: answered | search 1 | 11.4s
+q04: answered | search 2 | 27.7s
+q05: answered | search 1 | 12.3s
+q06: answered | search 1 | 12.0s
+q07: answered | search 1 | 11.2s
+q08: answered | search 1 | 9.9s
+q09: answered | search 1 | 9.8s
+q10: answered | search 1 | 9.2s
+q11: answered | search 1 | 24.6s
+q12: answered | search 1 | 11.7s
+q13: answered | search 1 | 9.2s
+q14: answered | search 1 | 9.4s
+q15: answered | search 1 | 13.4s
+q16: answered | search 1 | 10.6s
+q17: answered | search 2 | 17.0s
+q18: answered | search 1 | 9.8s
+q25: abstain | search 1 | 9.1s
+q26: abstain | search 1 | 8.9s
+{
+  "settings": {
+    "name": "I1",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "fallbacks": true,
+    "retriever": "dense-C",
+    "top_k": 3,
+    "budget": 3000,
+    "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+    "max_searches": 4,
+    "order": "arrival"
+  },
+  "split": "dev",
+  "cases": 20,
+  "errors": [],
+  "status": {
+    "answered": 18,
+    "abstain": 2
+  },
+  "tool_use": {
+    "n": 20,
+    "N": 20
+  },
+  "searches_per_case": {
+    "1": 18,
+    "2": 2
+  },
+  "llm_calls": 42,
+  "context_evidence": {
+    "n": 15,
+    "N": 18
+  },
+  "answerable_status": {
+    "answered": 18
+  },
+  "unanswerable_status": {
+    "abstain": 2
+  },
+  "latency_ms": {
+    "median": 10899.9,
+    "max": 27749.1
+  },
+  "input_chars": 108463,
+  "output_tokens_reported": 2805,
+  "output_cost_usd_est": 0.0561
+}

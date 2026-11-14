@@ -1,0 +1,490 @@
+{
+  "summary": {
+    "index": "B",
+    "chunks": 254,
+    "counts": {
+      "dev": {
+        "answerable": 18,
+        "unanswerable": 2
+      },
+      "test": {
+        "answerable": 6,
+        "unanswerable": 2
+      }
+    },
+    "meets_minimum_README_md_18": true,
+    "evidence_entries": 27,
+    "evidence_exact_in_day6": 6,
+    "questions_with_filter": 8
+  },
+  "evidence": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 15,
+          "day6_evidence": "bot traffic hiện chiếm khoảng 49,6% tổng lưu lượng Internet toàn cầu",
+          "day7_evidence": [
+            "bot traffic\nhiện chiếm khoảng 49,6% tổng lưu lượng Internet toàn cầu"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p15:665-1185"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 15,
+          "day6_evidence": "Theo thống kê của Cloudflare năm 2024, hơn 30% bot traffic độc hại có khả năng giả lập trình duyệt và hành vi người dùng",
+          "day7_evidence": [
+            "Theo thống kê của Cloudflare năm 2024, hơn 30% bot\ntraffic độc hại có khả năng giả lập trình duyệt và hành vi người dùng"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p15:1186-1860"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 18,
+          "day6_evidence": "Hệ thống có khả năng phát hiện bot dựa trên fingerprint, IP reputation và AI.",
+          "day7_evidence": [
+            "Hệ thống có khả năng phát hiện bot dựa trên fingerprint, IP\nreputation và AI."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p18:933-1705"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 24,
+          "day6_evidence": "Thế hệ thứ hai (2010–2016) – Phân tích hành vi và thống kê",
+          "day7_evidence": [
+            "Thế hệ thứ hai (2010–2016) – Phân tích hành vi và thống kê"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p24:674-1194"
+          ],
+          "exact_in_day6": true
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 27,
+          "day6_evidence": "dữ liệu traffic được làm sạch nhằm loại bỏ request lỗi, dữ liệu trùng lặp hoặc dữ liệu không hợp lệ",
+          "day7_evidence": [
+            "dữ liệu traffic được làm sạch\nnhằm loại bỏ request lỗi, dữ liệu trùng lặp hoặc dữ liệu không hợp lệ"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p27:719-1519"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 30,
+          "day6_evidence": "Đặc trưng về hành vi người dùng: số lượng trang truy cập, thời gian ở lại website (session duration), chuỗi điều hướng giữa các trang và tỷ lệ thoát trang (bounce rate).",
+          "day7_evidence": [
+            "Đặc trưng về hành vi người dùng: số lượng trang truy cập, thời gian ở lại website\n(session duration), chuỗi điều hướng giữa các trang và tỷ lệ thoát trang (bounce\nrate)."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p30:0-611"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 30,
+          "day6_evidence": "một số bộ dữ liệu nghiên cứu về bot detection như CIC-IDS2017, Bot-IoT hoặc Web Server Log Dataset",
+          "day7_evidence": [
+            "một số bộ dữ liệu nghiên cứu về bot detection như CIC-IDS2017,\nBot-IoT hoặc Web Server Log Dataset"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p30:2133-2521"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 60,
+          "day6_evidence": "Dữ liệu thực nghiệm gồm dữ liệu log thu thập từ request mẫu, dữ liệu đã tiền xử lý trong dataset.csv và dữ liệu mô phỏng trong synthetic_data.csv.",
+          "day7_evidence": [
+            "Dữ liệu thực nghiệm gồm dữ liệu log thu thập từ request mẫu, dữ liệu đã tiền xử\nlý trong dataset.csv và dữ liệu mô phỏng trong synthetic_data.csv."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p60:573-1219"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 31,
+          "day6_evidence": "MySQL được sử dụng để lưu trữ dữ liệu traffic có cấu trúc như session, request log, thông tin người dùng và kết quả phân loại traffic.",
+          "day7_evidence": [
+            "MySQL được sử dụng để lưu trữ dữ liệu traffic có cấu trúc như session, request\nlog, thông tin người dùng và kết quả phân loại traffic."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p31:0-554"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 49,
+          "day6_evidence": "User data (admin, analyst, system user) - Traffic logs (request history) - Detection results (bot_score, label) - System configuration (rules, thresholds) - Audit logs",
+          "day7_evidence": [
+            "User data (admin, analyst, system user)\n- Traffic logs (request history)\n- Detection results (bot_score, label)\n- System configuration (rules, thresholds)\n- Audit logs"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p49:0-403"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 35,
+          "day6_evidence": "Kết quả phân loại traffic gồm người dùng thật (real user), bot hợp lệ (good bot) hoặc bot bất thường (malicious bot)",
+          "day7_evidence": [
+            "Kết quả phân loại traffic gồm người dùng thật (real user), bot hợp lệ (good bot)\nhoặc bot bất thường (malicious bot)"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p35:1496-1925"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 47,
+          "day6_evidence": "POST /v1/collect – Thu thập request data",
+          "day7_evidence": [
+            "POST /v1/collect– Thu thập request data"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p47:775-1333"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 53,
+          "day6_evidence": "Nếu xác suất bot vượt ngưỡng cấu hình, hệ thống ghi nhận cảnh báo vào bảng bot_detection_results và hiển thị trên dashboard.",
+          "day7_evidence": [
+            "Nếu xác suất bot vượt ngưỡng cấu hình, hệ thống ghi nhận cảnh báo vào bảng\nbot_detection_results và hiển thị trên dashboard."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p53:329-836"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 54,
+          "day6_evidence": "ip_address Địa chỉ IP truy cập VARCHAR(45) Hỗ trợ IPv4/IPv6",
+          "day7_evidence": [
+            "ip_address Địa chỉ IP truy cập VARCHAR(45) Hỗ trợ IPv4/IPv6"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p54:0-799"
+          ],
+          "exact_in_day6": true
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 55,
+          "day6_evidence": "Dữ liệu thô phục vụ truy vết và huấn luyện lại, còn kết quả dự đoán phục vụ cảnh báo và báo cáo.",
+          "day7_evidence": [
+            "Dữ liệu thô phục vụ truy vết và huấn luyện lại, còn kết quả dự đoán phục\nvụ cảnh báo và báo cáo."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p55:772-1371"
+          ],
+          "exact_in_day6": false
+        },
+        {
+          "kind": "alt_gold",
+          "page": 54,
+          "day6_evidence": "không ghi đè log gốc mà được lưu riêng nhằm bảo toàn dữ liệu thô cho quá trình huấn luyện lại sau này",
+          "day7_evidence": [
+            "không ghi đè log gốc mà được lưu riêng nhằm bảo toàn\ndữ liệu thô cho quá trình huấn luyện lại sau này"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p54:800-1417"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 57,
+          "day6_evidence": "Sau khi đăng nhập, người dùng nhận access token để gọi các API",
+          "day7_evidence": [
+            "Sau khi đăng nhập, người dùng nhận access token để gọi các API"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p57:2606-2763"
+          ],
+          "exact_in_day6": true
+        },
+        {
+          "kind": "alt_gold",
+          "page": 49,
+          "day6_evidence": "JWT (access token + refresh token)",
+          "day7_evidence": [
+            "JWT (access token + refresh token)"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p49:404-773"
+          ],
+          "exact_in_day6": true
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 32,
+          "day6_evidence": "nếu AI Service tạm thời gặp lỗi, hệ thống vẫn có thể tiếp tục thu thập log và lưu dữ liệu thô để phân tích lại sau; các thành phần còn lại không bị dừng toàn bộ",
+          "day7_evidence": [
+            "nếu AI Service\ntạm thời gặp lỗi, hệ thống vẫn có thể tiếp tục thu thập log và lưu dữ liệu thô để phân\ntích lại sau; các thành phần còn lại không bị dừng toàn bộ"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p32:391-1151"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "split": "dev",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 71,
+          "day6_evidence": "Khi phát hiện dữ liệu lệch mạnh, hệ thống cần cảnh báo để người phát triển kiểm tra trước khi dùng dữ liệu đó huấn luyện lại mô hình.",
+          "day7_evidence": [
+            "Khi phát hiện dữ liệu lệch mạnh, hệ thống cần cảnh báo\nđể người phát triển kiểm tra trước khi dùng dữ liệu đó huấn luyện lại mô hình."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p71:985-1401"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 23,
+          "day6_evidence": "Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic.",
+          "day7_evidence": [
+            "Đề tài tập trung chủ yếu vào việc phát\nhiện bad bot traffic."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p23:1304-2006"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 64,
+          "day6_evidence": "hệ thống không nên tự động chặn ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm",
+          "day7_evidence": [
+            "hệ thống không nên tự động chặn\nngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p64:0-662"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 75,
+          "day6_evidence": "mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%",
+          "day7_evidence": [
+            "mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy\nkhoảng 93,85%"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p75:1103-1885"
+          ],
+          "exact_in_day6": false
+        },
+        {
+          "kind": "alt_gold",
+          "page": 77,
+          "day6_evidence": "Random Forest 93,85% 88,94% / 91,90%",
+          "day7_evidence": [
+            "Random Forest 93,85% 88,94% / 91,90%"
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p77:0-538"
+          ],
+          "exact_in_day6": true
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 38,
+          "day6_evidence": "Thời gian phản hồi API≤2 giây đối với các request thông thường.",
+          "day7_evidence": [
+            "Thời gian phản hồi API≤2 giây đối với các request thông thường."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p38:0-535"
+          ],
+          "exact_in_day6": true
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 77,
+          "day6_evidence": "Random Forest có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị đánh dấu nghi ngờ.",
+          "day7_evidence": [
+            "Random Forest\ncó thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có\nRPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị\nđánh dấu nghi ngờ."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p77:0-538"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "split": "test",
+      "evidence": [
+        {
+          "kind": "gold",
+          "page": 85,
+          "day6_evidence": "Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.",
+          "day7_evidence": [
+            "Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa\ndạng."
+          ],
+          "chunks": [
+            "B:doan-bot-traffic-2026:p85:879-1650"
+          ],
+          "exact_in_day6": false
+        }
+      ]
+    }
+  ]
+}

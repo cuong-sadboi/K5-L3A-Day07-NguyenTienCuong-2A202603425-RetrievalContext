@@ -1,0 +1,179 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      false
+    ],
+    "reason": "Đáp án đúng (phân tích hành vi và thống kê) nhưng đoạn trích p24:1195-1797 không nêu mốc 2010–2016; đoạn tiêu đề 'Thế hệ thứ hai (2010–2016)' (p24:674-1194) không có trong context, agent suy ra mốc năm từ đoạn liền trước. Chấm 2 và citation true nếu chấp nhận vì đoạn trích nằm ngay dưới tiêu đề đó trong bản gốc.",
+    "answer_grade": 1,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng một phần: nêu log truy cập và dữ liệu mô phỏng (tr. 66, đoạn trích hỗ trợ đúng câu đã viết), thiếu dữ liệu đã tiền xử lý trong dataset.csv; đoạn gold tr. 60 không được tìm thấy.",
+    "answer_grade": 1,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng và đủ; đoạn tr. 55 chứa evidence gold, đoạn tr. 73 hỗ trợ ý 'dễ kiểm tra sai lệch' (câu 'lưu riêng dữ liệu thô, dữ liệu feature và kết quả dự đoán giúp hệ thống dễ kiểm tra sai lệch').",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q17",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng một phần: các service khác vẫn hoạt động (đoạn tr. 31 về triển khai độc lập, Design for Failure hỗ trợ), nhưng thiếu ý chính 'vẫn tiếp tục thu thập log và lưu dữ liệu thô để phân tích lại sau' (tr. 32).",
+    "answer_grade": 1,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q18",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với đáp án chuẩn; đoạn được trích chứa evidence gold.",
+    "answer_grade": 2,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q25",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  },
+  {
+    "query_id": "q26",
+    "citation_support": [],
+    "reason": "Agent chỉ trả lời 'Không đủ bằng chứng để trả lời.', không thêm khẳng định nào (đã xem văn bản gốc của model).",
+    "abstention_correct": true,
+    "reviewed_by": "Claude (AI) soạn nháp; học viên đọc phiếu và xác nhận ngày 2026-11-14"
+  }
+]

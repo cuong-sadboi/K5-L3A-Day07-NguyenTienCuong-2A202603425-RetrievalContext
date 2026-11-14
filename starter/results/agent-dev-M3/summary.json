@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "name": "M3",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "fallbacks": true,
+    "retriever": "hybrid-rrf(dense-C+tfidf)",
+    "top_k": 3,
+    "budget": 800,
+    "budget_unit": "ký tự (gồm tiêu đề [ID | nguồn | page])",
+    "max_searches": 4,
+    "order": "arrival",
+    "rrf": {
+      "candidates_per_list": 20,
+      "k": 60
+    }
+  },
+  "split": "dev",
+  "cases": 20,
+  "errors": [],
+  "status": {
+    "answered": 15,
+    "abstain": 5
+  },
+  "tool_use": {
+    "n": 20,
+    "N": 20
+  },
+  "searches_per_case": {
+    "1": 13,
+    "3": 6,
+    "4": 1
+  },
+  "llm_calls": 55,
+  "context_evidence": {
+    "n": 11,
+    "N": 18
+  },
+  "answerable_status": {
+    "answered": 14,
+    "abstain": 4
+  },
+  "unanswerable_status": {
+    "answered": 1,
+    "abstain": 1
+  },
+  "latency_ms": {
+    "median": 10560.85,
+    "max": 28144.7
+  },
+  "input_chars": 106926,
+  "output_tokens_reported": 3537,
+  "output_cost_usd_est": 0.0707,
+  "cost_note": "Cổng API không trả số token input thật (input_tokens=1) và không hỗ trợ count_tokens; chỉ ước tính được chi phí phần output theo giá công bố; chi phí thực xem trên trang quản lý của cổng."
+}
